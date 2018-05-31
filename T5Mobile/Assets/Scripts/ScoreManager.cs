@@ -44,10 +44,9 @@ public class ScoreManager : MonoBehaviour {
 
     public void ResetPls()
     {
-        highscore = 0;
+        PlayerPrefs.SetInt("highscore", 0);
     }
-
-
+    
     public static void ResetScore()
     {
         score = 0;

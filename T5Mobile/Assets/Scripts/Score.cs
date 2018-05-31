@@ -24,7 +24,7 @@ public class Score : MonoBehaviour
         scoreText2.enabled = true;
         timer.enabled = true;
         timer2.enabled = true;
-        time = 10;
+        time = 5;
     }
 
     // Update is called once per frame
@@ -54,7 +54,7 @@ public class Score : MonoBehaviour
 
     public void ResetPls()
     {
-        ScoreManager.highscore = 0;
+        PlayerPrefs.SetInt("highscore", 0);
     }
     
 }
