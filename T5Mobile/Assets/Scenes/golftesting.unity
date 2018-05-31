@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 469489806}
   - component: {fileID: 469489810}
   - component: {fileID: 469489811}
+  - component: {fileID: 469489812}
   m_Layer: 0
   m_Name: GolfBall
   m_TagString: Untagged
@@ -493,6 +494,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwForce: 0.3
+--- !u!114 &469489812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469489805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6783671511c3aa4da9c851a6b718b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  stopSpeed: {x: 1, y: 0}
 --- !u!1 &988726311
 GameObject:
   m_ObjectHideFlags: 0
