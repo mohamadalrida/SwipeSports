@@ -37,7 +37,7 @@ public class StopBallVelocity : MonoBehaviour {
         {
             Debug.Log("Stopping Speed Reached ");
 
-            currentBallSpeed = new Vector2(0, 0);
+            rb.velocity = new Vector2(0, 0);
 
             Debug.Log("Ball Stopped ");
         }
