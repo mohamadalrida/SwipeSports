@@ -10,6 +10,9 @@ public class StopBallVelocity : MonoBehaviour {
     private Vector2 currentBallSpeed;
     private Vector2 newPosition;
 
+
+    private bool thrown;
+
     
 
     
@@ -22,8 +25,7 @@ public class StopBallVelocity : MonoBehaviour {
 
         currentBallSpeed = rb.velocity;
 
-        
-        //stopSpeed = new Vector2((-1f, 1f), (-100f, 100f));
+        thrown = GetComponent<DragThrow>().throwAllowed;
 
     }
 	
@@ -43,17 +45,22 @@ public class StopBallVelocity : MonoBehaviour {
             Debug.Log("Ball Stopped ");
         }
 
-        
-        if ( currentBallSpeed.x > 1)
-        {
+
+        //if (thrown == true)
+        //{
+        //    if ( currentBallSpeed.x > 1)
+        //    {
             
-            Debug.Log("Stopping Speed Reached ");
+        //    Debug.Log("Stopping Speed Reached ");
 
-            currentBallSpeed = new Vector2(0, 0);
+        //    rb.velocity = new Vector2(0, 0);
 
-            Debug.Log("Ball Stopped ");
+        //    Debug.Log("Ball Stopped ");
 
-        }
+        //    }
+
+        //}
+        
 
 	}
 }
