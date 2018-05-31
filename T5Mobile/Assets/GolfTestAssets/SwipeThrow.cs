@@ -28,27 +28,31 @@ public class SwipeThrow : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if(Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began)
+        if (throwAllowed == true)
         {
-            touchTimeStart = Time.time;
-            startPos = Input.GetTouch(0).position;
+
+
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                touchTimeStart = Time.time;
+                startPos = Input.GetTouch(0).position;
+            }
+
+            if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && throwAllowed)
+            {
+                touchTimeFinish = Time.time;
+
+                timeInterval = touchTimeFinish - touchTimeStart;
+
+                endPos = Input.GetTouch(0).position;
+
+                direction = startPos - endPos;
+
+                rb.isKinematic = false;
+                rb.AddForce(-direction / timeInterval * throwForce);
+
+                throwAllowed = false;
+            }
         }
-
-        if(Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && throwAllowed)
-        {
-            touchTimeFinish = Time.time;
-
-            timeInterval = touchTimeFinish - touchTimeStart;
-
-            endPos = Input.GetTouch(0).position;
-
-            direction = startPos - endPos;
-
-            rb.isKinematic = false;
-            rb.AddForce(-direction / timeInterval * throwForce);
-
-            throwAllowed = false;
-        }
-
     }
 }

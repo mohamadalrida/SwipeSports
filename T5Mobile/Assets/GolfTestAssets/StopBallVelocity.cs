@@ -22,6 +22,7 @@ public class StopBallVelocity : MonoBehaviour {
 
         currentBallSpeed = rb.velocity;
 
+        
         //stopSpeed = new Vector2((-1f, 1f), (-100f, 100f));
 
     }
@@ -43,9 +44,9 @@ public class StopBallVelocity : MonoBehaviour {
         }
 
         
-        if ( currentBallSpeed == stopSpeed)
+        if ( currentBallSpeed.x > 1)
         {
-
+            
             Debug.Log("Stopping Speed Reached ");
 
             currentBallSpeed = new Vector2(0, 0);
