@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour {
     public static int highscore;
 
     Text highestscore;
+    public Text highestscore2;
 
 	// Use this for initialization
 	void Start ()
@@ -18,9 +19,10 @@ public class ScoreManager : MonoBehaviour {
         score = 0;
 
         highscore = PlayerPrefs.GetInt("highscore", highscore);
-        highestscore.text = "Highscore: " + highscore.ToString();   
-        
-	}
+        highestscore.text = "Highscore: " + highscore.ToString();
+        highestscore2.text = "Highscore: " + highscore.ToString();
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,6 +31,7 @@ public class ScoreManager : MonoBehaviour {
         {
             highscore = score;
             highestscore.text = "Highscore: " + score;
+            highestscore2.text = "Highscore: " + score;
 
             PlayerPrefs.SetInt("highscore", highscore);
         }
