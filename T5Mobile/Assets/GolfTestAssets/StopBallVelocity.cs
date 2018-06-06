@@ -51,7 +51,18 @@ public class StopBallVelocity : MonoBehaviour {
 
             Debug.Log("Ball Stopped ");
         }
-        
+
+        if (Input.GetKeyDown("x"))
+        {
+            
+            rb.velocity = new Vector2(0, 0);
+            rb.gravityScale = 1.0f;
+            rb.freezeRotation = false;
+
+            GetComponent<DragThrow>().throwAllowed = true;
+            
+        }
+
         if (thrown == false)
         {
             Debug.Log("------Ball Hit-------");
