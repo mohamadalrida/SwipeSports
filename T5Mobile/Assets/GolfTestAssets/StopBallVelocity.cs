@@ -59,6 +59,9 @@ public class StopBallVelocity : MonoBehaviour {
             rb.gravityScale = 1.0f;
             rb.freezeRotation = false;
 
+            thrown = true;
+            waitTime = 0;
+
             GetComponent<DragThrow>().throwAllowed = true;
             
         }
