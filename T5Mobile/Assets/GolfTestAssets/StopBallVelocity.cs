@@ -93,6 +93,19 @@ public class StopBallVelocity : MonoBehaviour {
                     {
                         StrokeManager.strokesNumber++;
                     }
+
+                    waitTime = 0;
+
+                    if (waitTime == 0)
+                    {
+                        rb.velocity = new Vector2(0, 0);
+                        rb.gravityScale = 1.0f;
+                        rb.freezeRotation = false;
+
+                        thrown = true;
+                        
+                        GetComponent<DragThrow>().throwAllowed = true;
+                    }
                     
                 }
             }
