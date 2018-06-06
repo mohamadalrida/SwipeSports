@@ -80,7 +80,7 @@ public class StopBallVelocity : MonoBehaviour {
             if (waitTime >= 5)
             {
                            
-                if (currentBallSpeed.x < ballStopSpeedpos || currentBallSpeed.x < ballStopSpeedneg)
+                if (currentBallSpeed.x < ballStopSpeedpos && currentBallSpeed.x > ballStopSpeedneg)
                 {
 
                     Debug.Log("Stopping Speed Reached ");
