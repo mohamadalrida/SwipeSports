@@ -17,6 +17,9 @@ public class StopBallVelocity : MonoBehaviour {
     public float ballStopSpeedpos;
     public float ballStopSpeedneg;
 
+    private float directionChange;
+    public float timeBetweenDirection;
+
     
       
 
@@ -42,6 +45,8 @@ public class StopBallVelocity : MonoBehaviour {
         thrown = GetComponent<DragThrow>().throwAllowed;
 
         Debug.Log("Wait Seconds : " + waitTime);
+
+        Debug.Log("Time Between Direction : " + timeBetweenDirection);
 
         if (Input.GetKeyDown("space"))
         {
@@ -82,34 +87,45 @@ public class StopBallVelocity : MonoBehaviour {
                            
                 if (currentBallSpeed.x < ballStopSpeedpos && currentBallSpeed.x > ballStopSpeedneg)
                 {
+                    timeBetweenDirection += Time.deltaTime;
 
-                    Debug.Log("Stopping Speed Reached ");
-
-                    rb.velocity = new Vector2(0, 0);
-                    rb.gravityScale = 0.0f;
-                    rb.freezeRotation = true;
-
-                    Debug.Log("Ball Stopped ");
-
-                    if (rb.freezeRotation == true)
+                    if (timeBetweenDirection >= 1)
                     {
-                        StrokeManager.strokesNumber++;
-                    }
 
-                    waitTime = 0;
-
-                    if (waitTime == 0)
-                    {
-                        rb.velocity = new Vector2(0, 0);
-                        rb.gravityScale = 1.0f;
-                        rb.freezeRotation = false;
-
-                        thrown = true;
-                        
-                        GetComponent<DragThrow>().throwAllowed = true;
-                    }
                     
+
+                        Debug.Log("Stopping Speed Reached ");
+
+                        rb.velocity = new Vector2(0, 0);
+                        rb.gravityScale = 0.0f;
+                        rb.freezeRotation = true;
+
+                        Debug.Log("Ball Stopped ");
+
+                        if (rb.freezeRotation == true)
+                        {
+                            StrokeManager.strokesNumber++;
+                        }
+
+                        waitTime = 0;
+
+                        if (waitTime == 0)
+                        {
+                            rb.velocity = new Vector2(0, 0);
+                            rb.gravityScale = 1.0f;
+                            rb.freezeRotation = false;
+
+                            thrown = true;
+                        
+                            GetComponent<DragThrow>().throwAllowed = true;
+
+                            timeBetweenDirection = 0;
+
+                        }
+                    }
+
                 }
+                
             }
         }
 
