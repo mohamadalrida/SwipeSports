@@ -13,9 +13,10 @@ public class StopBallVelocity : MonoBehaviour {
 
     private bool thrown;
 
-    
+    public float waitTime ;
 
     
+      
 
 
 	// Use this for initialization
@@ -25,42 +26,62 @@ public class StopBallVelocity : MonoBehaviour {
 
         currentBallSpeed = rb.velocity;
 
-        thrown = GetComponent<DragThrow>().throwAllowed;
-
+        
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         currentBallSpeed = rb.velocity;
 
         Debug.Log("current velocity = " + rb.velocity);
+
+        
+        thrown = GetComponent<DragThrow>().throwAllowed;
+
+        Debug.Log("Wait Seconds : " + waitTime);
 
         if (Input.GetKeyDown("space"))
         {
             Debug.Log("Stopping Speed Reached ");
 
             rb.velocity = new Vector2(0, 0);
+            rb.gravityScale = 0.0f;
+            rb.freezeRotation = true;
 
             Debug.Log("Ball Stopped ");
         }
-
-
-        //if (thrown == true)
-        //{
-        //    if ( currentBallSpeed.x > 1)
-        //    {
-            
-        //    Debug.Log("Stopping Speed Reached ");
-
-        //    rb.velocity = new Vector2(0, 0);
-
-        //    Debug.Log("Ball Stopped ");
-
-        //    }
-
-        //}
         
+        if (thrown == false)
+        {
+            Debug.Log("------Ball Hit-------");
 
-	}
+            if (waitTime <= 5)
+            {
+                waitTime += Time.deltaTime;
+            }
+
+            if (waitTime >= 5)
+            {
+                           
+                if (currentBallSpeed.x > 0.5)
+                {
+
+                    Debug.Log("Stopping Speed Reached ");
+
+                    rb.velocity = new Vector2(0, 0);
+                    rb.gravityScale = 0.0f;
+                    rb.freezeRotation = true;
+
+
+                    Debug.Log("Ball Stopped ");
+
+
+
+                }
+            }
+        }
+
+
+    }
 }
