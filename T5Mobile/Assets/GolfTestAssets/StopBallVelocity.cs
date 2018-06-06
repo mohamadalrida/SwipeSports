@@ -73,11 +73,13 @@ public class StopBallVelocity : MonoBehaviour {
                     rb.gravityScale = 0.0f;
                     rb.freezeRotation = true;
 
-
                     Debug.Log("Ball Stopped ");
 
-
-
+                    if (rb.freezeRotation == true)
+                    {
+                        StrokeManager.strokesNumber++;
+                    }
+                    
                 }
             }
         }

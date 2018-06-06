@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class StrokeManager : MonoBehaviour {
 
+    public static int strokesNumber;
     public Text strokes;
+
     public Text par;
     public Text hole;
-    private int strokesNumber = 0;
     public int parNumber;
     public int holeNumber;
 
@@ -16,6 +17,7 @@ public class StrokeManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        strokesNumber = 0;
         strokes.text = "" + strokesNumber;
         par.text = "" + parNumber;
         hole.text = "" + holeNumber;
@@ -25,11 +27,7 @@ public class StrokeManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            strokesNumber++;
-            strokes.text = "" + strokesNumber;
-        }
+        strokes.text = "" + strokesNumber;
 
 	}
 }

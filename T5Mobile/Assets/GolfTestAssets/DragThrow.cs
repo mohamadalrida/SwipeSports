@@ -37,6 +37,7 @@ public class DragThrow : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && throwAllowed)
         {
+            
             touchTimeFinish = Time.time;
 
             timeInterval = touchTimeFinish - touchTimeStart;
@@ -47,6 +48,8 @@ public class DragThrow : MonoBehaviour
 
             rb.isKinematic = false;
             rb.AddForce(-direction / timeInterval * throwForce);
+
+            //StrokeManager.strokesNumber++;
 
             throwAllowed = false;
         }
