@@ -6,7 +6,6 @@ public class StopBallVelocity : MonoBehaviour {
 
     public Rigidbody2D rb;
 
-    public Vector2 stopSpeed;
     private Vector2 currentBallSpeed;
     private Vector2 newPosition;
 
@@ -14,6 +13,9 @@ public class StopBallVelocity : MonoBehaviour {
     private bool thrown;
 
     public float waitTime ;
+
+    public float ballStopSpeedpos;
+    public float ballStopSpeedneg;
 
     
       
@@ -78,7 +80,7 @@ public class StopBallVelocity : MonoBehaviour {
             if (waitTime >= 5)
             {
                            
-                if (currentBallSpeed.x > 0.5)
+                if (currentBallSpeed.x < ballStopSpeedpos && currentBallSpeed.x > ballStopSpeedneg)
                 {
 
                     Debug.Log("Stopping Speed Reached ");
