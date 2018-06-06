@@ -464,7 +464,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 469489805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.11, y: 1.93, z: 0}
+  m_LocalPosition: {x: -7.11, y: -2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -481,6 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda5706b5f62bcb42821adb52d684db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  throwAllowed: 1
   throwForce: 0.3
 --- !u!114 &469489811
 MonoBehaviour:
@@ -507,6 +508,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   stopSpeed: {x: 1, y: 0}
+  waitTime: 0
 --- !u!1 &988726311
 GameObject:
   m_ObjectHideFlags: 0
