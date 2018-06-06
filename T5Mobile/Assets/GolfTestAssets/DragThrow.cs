@@ -15,7 +15,7 @@ public class DragThrow : MonoBehaviour
 
     Rigidbody2D rb;
 
-    bool throwAllowed = true;
+    public bool throwAllowed = true;
 
     public float throwForce = 0.3f;
 
