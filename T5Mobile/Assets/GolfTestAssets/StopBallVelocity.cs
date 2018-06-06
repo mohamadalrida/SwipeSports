@@ -46,6 +46,8 @@ public class StopBallVelocity : MonoBehaviour {
             Debug.Log("Stopping Speed Reached ");
 
             rb.velocity = new Vector2(0, 0);
+            rb.gravityScale = 0.0f;
+            rb.freezeRotation = true;
 
             Debug.Log("Ball Stopped ");
         }
