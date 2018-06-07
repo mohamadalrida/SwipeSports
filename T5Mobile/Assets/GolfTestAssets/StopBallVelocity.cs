@@ -17,7 +17,8 @@ public class StopBallVelocity : MonoBehaviour {
     public float ballStopSpeedpos;
     public float ballStopSpeedneg;
 
-    public float timeBetweenDirection;
+    private float timeBetweenDirection;
+    public float timeBallStopped;
 
     
       
@@ -88,7 +89,7 @@ public class StopBallVelocity : MonoBehaviour {
                 {
                     timeBetweenDirection += Time.deltaTime;                                               // Start second timer that tracks when the ball is slow enough, so collisions with wall wont stop the ball
 
-                    if (timeBetweenDirection >= 1)                                                        // If the ball is slow enough for X amount of secoonds 
+                    if (timeBetweenDirection >= timeBallStopped)                                                        // If the ball is slow enough for X amount of secoonds 
                     {
 
                     

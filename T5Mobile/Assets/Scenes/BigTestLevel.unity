@@ -519,7 +519,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1825021071}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 66b0bb2b56c13924d93ce18337f86600, type: 2}
+  m_Material: {fileID: 6200000, guid: 25926c21edc1cae41bd139962a7624dc, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -850,6 +850,11 @@ Prefab:
         type: 2}
       propertyPath: ballStopSpeedneg
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: timeBallStopped
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
