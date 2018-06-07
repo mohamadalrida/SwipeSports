@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StopBallVelocity : MonoBehaviour {
 
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
 
     private Vector2 currentBallSpeed;
     private Vector2 newPosition;
@@ -12,7 +12,8 @@ public class StopBallVelocity : MonoBehaviour {
 
     private bool thrown;
 
-    public float waitTime ;
+    private float waitTime ;
+    public float waitAfterHit;
 
     public float ballStopSpeedpos;
     public float ballStopSpeedneg;
@@ -77,12 +78,12 @@ public class StopBallVelocity : MonoBehaviour {
         {
             Debug.Log("------Ball Hit-------");
 
-            if (waitTime <= 5)        // Start count down clock
+            if (waitTime <= waitAfterHit)        // Start count down clock
             {
                 waitTime += Time.deltaTime;
             }
 
-            if (waitTime >= 5)        // If the clock has reached passed 5 seconds
+            if (waitTime >= waitAfterHit)        // If the clock has reached passed X seconds
             {
                            
                 if (currentBallSpeed.x < ballStopSpeedpos && currentBallSpeed.x > ballStopSpeedneg)       // If the ball is between a certain velocity in either direction
