@@ -17,7 +17,6 @@ public class StopBallVelocity : MonoBehaviour {
     public float ballStopSpeedpos;
     public float ballStopSpeedneg;
 
-    private float directionChange;
     public float timeBetweenDirection;
 
     
@@ -48,7 +47,7 @@ public class StopBallVelocity : MonoBehaviour {
 
         Debug.Log("Time Between Direction : " + timeBetweenDirection);
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space"))                       // when space pressed stop the ball
         {
             Debug.Log("Stopping Speed Reached ");
 
@@ -59,7 +58,7 @@ public class StopBallVelocity : MonoBehaviour {
             Debug.Log("Ball Stopped ");
         }
 
-        if (Input.GetKeyDown("x"))
+        if (Input.GetKeyDown("x"))                           // When X pressed allow next stroke
         {
             
             rb.velocity = new Vector2(0, 0);
@@ -73,43 +72,43 @@ public class StopBallVelocity : MonoBehaviour {
             
         }
 
-        if (thrown == false)
+        if (thrown == false)           // When the ball is thrown
         {
             Debug.Log("------Ball Hit-------");
 
-            if (waitTime <= 5)
+            if (waitTime <= 5)        // Start count down clock
             {
                 waitTime += Time.deltaTime;
             }
 
-            if (waitTime >= 5)
+            if (waitTime >= 5)        // If the clock has reached passed 5 seconds
             {
                            
-                if (currentBallSpeed.x < ballStopSpeedpos && currentBallSpeed.x > ballStopSpeedneg)
+                if (currentBallSpeed.x < ballStopSpeedpos && currentBallSpeed.x > ballStopSpeedneg)       // If the ball is between a certain velocity in either direction
                 {
-                    timeBetweenDirection += Time.deltaTime;
+                    timeBetweenDirection += Time.deltaTime;                                               // Start second timer that tracks when the ball is slow enough, so collisions with wall wont stop the ball
 
-                    if (timeBetweenDirection >= 1)
+                    if (timeBetweenDirection >= 1)                                                        // If the ball is slow enough for X amount of secoonds 
                     {
 
                     
 
                         Debug.Log("Stopping Speed Reached ");
 
-                        rb.velocity = new Vector2(0, 0);
+                        rb.velocity = new Vector2(0, 0);                                                  // Freeze the ball
                         rb.gravityScale = 0.0f;
                         rb.freezeRotation = true;
 
                         Debug.Log("Ball Stopped ");
 
-                        if (rb.freezeRotation == true)
+                        if (rb.freezeRotation == true)                                                    // Add Stroke
                         {
                             StrokeManager.strokesNumber++;
                         }
 
-                        waitTime = 0;
+                        waitTime = 0;                                                                     // Reset waitTime
 
-                        if (waitTime == 0)
+                        if (waitTime == 0)                                                                // If wait has been reset, reset ball settings
                         {
                             rb.velocity = new Vector2(0, 0);
                             rb.gravityScale = 1.0f;
@@ -117,9 +116,9 @@ public class StopBallVelocity : MonoBehaviour {
 
                             thrown = true;
                         
-                            GetComponent<DragThrow>().throwAllowed = true;
+                            GetComponent<DragThrow>().throwAllowed = true;                                // Allow next stoke to be taken
 
-                            timeBetweenDirection = 0;
+                            timeBetweenDirection = 0;                                                     // Reset ball slowed timer
 
                         }
                     }
