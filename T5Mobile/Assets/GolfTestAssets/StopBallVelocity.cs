@@ -105,23 +105,24 @@ public class StopBallVelocity : MonoBehaviour {
 
                         if (rb.freezeRotation == true)                                                    // Add Stroke
                         {
-                            StrokeManager.strokesNumber++;
+                            //StrokeManager.strokesNumber++;
                         }
 
                         waitTime = 0;                                                                     // Reset waitTime
 
                         if (waitTime == 0)                                                                // If wait has been reset, reset ball settings
-                        {
+                        {   
                             rb.velocity = new Vector2(0, 0);
                             rb.gravityScale = 1.0f;
                             rb.freezeRotation = false;
 
                             thrown = true;
-                        
+                            
                             GetComponent<DragThrow>().throwAllowed = true;                                // Allow next stoke to be taken
 
                             timeBetweenDirection = 0;                                                     // Reset ball slowed timer
 
+                            StrokeManager.strokesNumber++;
                         }
                     }
 
