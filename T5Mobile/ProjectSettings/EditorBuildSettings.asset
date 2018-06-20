@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 2806507854e4ccd439f9f8de769ee50d
+  - enabled: 1
+    path: Assets/Scenes/GameTypeSelect.unity
+    guid: f40361d70865fc44b99f91100ec93f21
+  - enabled: 1
+    path: Assets/Scenes/MainMenuSwipeSports.unity
+    guid: dfc4314e7f897314ea8d6ee97d57f867
   m_configObjects: {}
