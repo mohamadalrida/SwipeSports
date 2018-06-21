@@ -37,7 +37,8 @@ public class DragThrow : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && throwAllowed)
         {
-            
+            rb.gravityScale = 1.0f; // reset gravity
+
             touchTimeFinish = Time.time;
 
             timeInterval = touchTimeFinish - touchTimeStart;

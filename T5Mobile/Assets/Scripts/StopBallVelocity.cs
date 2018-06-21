@@ -113,7 +113,7 @@ public class StopBallVelocity : MonoBehaviour {
                         if (waitTime == 0)                                                                // If wait has been reset, reset ball settings
                         {   
                             rb.velocity = new Vector2(0, 0);
-                            rb.gravityScale = 1.0f;
+                            //rb.gravityScale = 1.0f;          // Disabling to reset on release of swipe
                             rb.freezeRotation = false;
 
                             thrown = true;
