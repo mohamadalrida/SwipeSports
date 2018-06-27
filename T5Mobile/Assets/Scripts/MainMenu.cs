@@ -26,4 +26,19 @@ public class MainMenu : MonoBehaviour {
     {
         
     }
+
+    public void LoadStore()
+    {
+        Application.LoadLevel("Shop");
+    }
+
+    public void Settings()
+    {
+        Application.LoadLevel("Settings");
+    }
+
+    public void Character()
+    {
+        Application.LoadLevel("Character");
+    }
 }

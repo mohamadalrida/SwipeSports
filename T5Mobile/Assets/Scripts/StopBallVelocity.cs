@@ -40,24 +40,24 @@ public class StopBallVelocity : MonoBehaviour {
     {
         currentBallSpeed = rb.velocity;
 
-        Debug.Log("current velocity = " + rb.velocity);
+        //Debug.Log("current velocity = " + rb.velocity);
 
         
         thrown = GetComponent<DragThrow>().throwAllowed;
 
-        Debug.Log("Wait Seconds : " + waitTime);
+        //Debug.Log("Wait Seconds : " + waitTime);
 
-        Debug.Log("Time Between Direction : " + timeBetweenDirection);
+        //Debug.Log("Time Between Direction : " + timeBetweenDirection);
 
         if (Input.GetKeyDown("space"))                       // when space pressed stop the ball
         {
-            Debug.Log("Stopping Speed Reached ");
+            //Debug.Log("Stopping Speed Reached ");
 
             rb.velocity = new Vector2(0, 0);
             rb.gravityScale = 0.0f;
             rb.freezeRotation = true;
 
-            Debug.Log("Ball Stopped ");
+            //Debug.Log("Ball Stopped ");
         }
 
         if (Input.GetKeyDown("x"))                           // When X pressed allow next stroke
@@ -76,7 +76,7 @@ public class StopBallVelocity : MonoBehaviour {
 
         if (thrown == false)           // When the ball is thrown
         {
-            Debug.Log("------Ball Hit-------");
+            //Debug.Log("------Ball Hit-------");
 
             if (waitTime <= waitAfterHit)        // Start count down clock
             {

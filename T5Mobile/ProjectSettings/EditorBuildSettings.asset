@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu Scenes/MainMenuSwipeSports.unity
+    guid: dfc4314e7f897314ea8d6ee97d57f867
+  - enabled: 1
+    path: Assets/Scenes/Menu Scenes/GameTypeSelect.unity
+    guid: f40361d70865fc44b99f91100ec93f21
+  - enabled: 1
+    path: Assets/Scenes/Menu Scenes/Shop.unity
+    guid: 56b48a4308244034aa6763fb90f74ce6
+  - enabled: 1
+    path: Assets/Scenes/Menu Scenes/Settings.unity
+    guid: b82c445590a8d4b4e817d4970353cc9c
+  - enabled: 1
     path: Assets/Scenes/golftesting.unity
     guid: 8197448e3b7c62e4a82fdba81deeb183
   - enabled: 1
@@ -17,10 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 2806507854e4ccd439f9f8de769ee50d
-  - enabled: 1
-    path: Assets/Scenes/GameTypeSelect.unity
-    guid: f40361d70865fc44b99f91100ec93f21
-  - enabled: 1
-    path: Assets/Scenes/MainMenuSwipeSports.unity
-    guid: dfc4314e7f897314ea8d6ee97d57f867
   m_configObjects: {}
