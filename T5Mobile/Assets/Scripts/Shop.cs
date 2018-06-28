@@ -19,12 +19,12 @@ public class Shop : MonoBehaviour {
     public Button btn5;
     public Button btn6;
 
-    static int Purchased1;
-    static int Purchased2;
-    static int Purchased3;
-    static int Purchased4;
-    static int Purchased5;
-    static int Purchased6;
+    public static int Purchased1;
+    public static int Purchased2;
+    public static int Purchased3;
+    public static int Purchased4;
+    public static int Purchased5;
+    public static int Purchased6;
 
 
 
@@ -37,31 +37,31 @@ public class Shop : MonoBehaviour {
         Purchased5 = PlayerPrefs.GetInt("Purchased5", Purchased5);
         Purchased6 = PlayerPrefs.GetInt("Purchased6", Purchased6);
 
-        if (CoinManager.Coins < Cost1 || Purchased1 == 1)
+        if (CoinManager.Coins < Cost1 || Purchased1 == 0)
         {
             btn1.interactable = false;
         }
 
-        if (CoinManager.Coins < Cost2 || Purchased2== 1)
+        if (CoinManager.Coins < Cost2 || Purchased2 == 0)
         {
             btn2.interactable = false;
         }
 
-        if (CoinManager.Coins < Cost3 || Purchased3 == 1)
+        if (CoinManager.Coins < Cost3 || Purchased3 == 0)
         {
             btn3.interactable = false;
         }
 
-        if (CoinManager.Coins < Cost4 || Purchased4 == 1)
+        if (CoinManager.Coins < Cost4 || Purchased4 == 0)
         {
             btn4.interactable = false;
         }
 
-        if (CoinManager.Coins < Cost5 || Purchased5 == 1)
+        if (CoinManager.Coins < Cost5 || Purchased5 == 0)
         {
             btn5.interactable = false;
         }
-        if (CoinManager.Coins < Cost6 || Purchased6 == 1)
+        if (CoinManager.Coins < Cost6 || Purchased6 == 0)
         {
             btn6.interactable = false;
         }

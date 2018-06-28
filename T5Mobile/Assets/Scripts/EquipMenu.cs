@@ -3,43 +3,63 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EquipMenu : MonoBehaviour {
-
-   
-
+    
     private void Start()
     {
-       
+        Shop.Purchased1 = PlayerPrefs.GetInt("Purchased1", Shop.Purchased1);
+        Shop.Purchased2 = PlayerPrefs.GetInt("Purchased2", Shop.Purchased2);
+        Shop.Purchased3 = PlayerPrefs.GetInt("Purchased3", Shop.Purchased3);
+        Shop.Purchased4 = PlayerPrefs.GetInt("Purchased4", Shop.Purchased4);
+        Shop.Purchased5 = PlayerPrefs.GetInt("Purchased5", Shop.Purchased5);
+        Shop.Purchased6 = PlayerPrefs.GetInt("Purchased6", Shop.Purchased6);
     }
 
     public void EquipYellow()
     {
-        PlayerPrefs.SetString("Equip", "Yellow");
-        Debug.Log("equipped yellow");
+        if (Shop.Purchased1 == 1)
+        {
+            PlayerPrefs.SetString("Equip", "Yellow");
+            Debug.Log("equipped yellow");
+        }
     }
 
     public void EquipGreen()
     {
-        PlayerPrefs.SetString("Equip", "Green");
+        if (Shop.Purchased2 == 1)
+        {
+            PlayerPrefs.SetString("Equip", "Green");        
+        } 
     }
 
     public void EquipBlue()
     {
-        PlayerPrefs.SetString("Equip", "Blue");
+        if (Shop.Purchased1 == 1)
+        { 
+            PlayerPrefs.SetString("Equip", "Blue");
+        }
     }
 
     public void EquipSky()
     {
-        PlayerPrefs.SetString("Equip", "Sky");
+        if (Shop.Purchased1 == 1)
+        {
+            PlayerPrefs.SetString("Equip", "Sky");
+        }
     }
 
     public void EquipPink()
     {
-        PlayerPrefs.SetString("Equip", "Pink");
+        if (Shop.Purchased1 == 1)
+        {
+            PlayerPrefs.SetString("Equip", "Pink");
+        }
     }
 
     public void EquipRed()
     {
-        PlayerPrefs.SetString("Equip", "Red");
+        if (Shop.Purchased1 == 1)
+        {
+            PlayerPrefs.SetString("Equip", "Red");
+        }
     }
-   
 }

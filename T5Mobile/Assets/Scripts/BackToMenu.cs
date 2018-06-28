@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackToMenu : MonoBehaviour {
 
@@ -16,6 +17,6 @@ public class BackToMenu : MonoBehaviour {
 
     public void Menu()
     {
-        Application.LoadLevel("MainMenuSwipeSports");
+        SceneManager.LoadScene("MainMenuSwipeSports");
     }
 }
