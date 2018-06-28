@@ -40,6 +40,8 @@ public class SwipeThrow : MonoBehaviour {
 
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended && throwAllowed)
             {
+                rb.gravityScale = 1.0f; // reset gravity
+
                 touchTimeFinish = Time.time;
 
                 timeInterval = touchTimeFinish - touchTimeStart;
