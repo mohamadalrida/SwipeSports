@@ -20,6 +20,8 @@ public class CoinManager : MonoBehaviour {
 
         coinText.text = "Coins: " + Coins;
 
+        
+
     }
 
     private void OnTriggerEnter2D()
@@ -28,5 +30,7 @@ public class CoinManager : MonoBehaviour {
         
         PlayerPrefs.SetInt("Coins", Coins);
         Debug.Log("< color = red > +1! Current Coins: " + Coins);
+
+        Destroy(gameObject);
     }
 }

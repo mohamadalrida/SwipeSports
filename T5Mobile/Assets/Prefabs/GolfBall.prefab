@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4330290746824100}
   - component: {fileID: 212522550714323674}
   m_Layer: 0
-  m_Name: New Sprite (2)
+  m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4292156988704392}
   - component: {fileID: 212754292689181324}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4768555167224548}
   - component: {fileID: 212277302423456782}
   m_Layer: 0
-  m_Name: New Sprite (5)
+  m_Name: Yellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 4872577311779184}
   - component: {fileID: 212975119118970454}
   m_Layer: 0
-  m_Name: New Sprite (3)
+  m_Name: Pink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 4856444250365952}
   - component: {fileID: 212634854273713560}
   m_Layer: 0
-  m_Name: New Sprite (4)
+  m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4327256343659686}
   - component: {fileID: 212614623157475854}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,6 +121,7 @@ GameObject:
   - component: {fileID: 114906802031019016}
   - component: {fileID: 114397327900680050}
   - component: {fileID: 114914476157560052}
+  - component: {fileID: 114853702947608864}
   m_Layer: 0
   m_Name: GolfBall
   m_TagString: Untagged
@@ -135,7 +136,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1977042584421098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: -0.6159973, z: 0}
+  m_LocalPosition: {x: -0.071502686, y: 1.8574524, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children:
   - {fileID: 4292156988704392}
@@ -272,6 +273,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwForce: 2
+--- !u!114 &114853702947608864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1977042584421098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13c96d3055e7a104db0c94087f1373bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Yellow: {fileID: 1606015942808272}
+  Green: {fileID: 1001157591743858}
+  Blue: {fileID: 1844860143111414}
+  Sky: {fileID: 1641209723497556}
+  Pink: {fileID: 1623110599936916}
+  Red: {fileID: 1370498695292404}
 --- !u!114 &114906802031019016
 MonoBehaviour:
   m_ObjectHideFlags: 1
