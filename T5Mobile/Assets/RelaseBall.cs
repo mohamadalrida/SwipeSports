@@ -32,5 +32,6 @@ public class RelaseBall : MonoBehaviour {
 
         theBall1.attachedRigidbody.AddForce(transform.right * releaseSpeed);
 
+        rb.gravityScale = 1.0f;
     }
 }
