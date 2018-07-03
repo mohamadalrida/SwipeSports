@@ -15,6 +15,8 @@ public class CatapultLauncher : MonoBehaviour {
 
     public float childTime;
 
+    public GameObject releaseVolume;
+
     // Use this for initialization
     void Start ()
     {
@@ -44,8 +46,7 @@ public class CatapultLauncher : MonoBehaviour {
     {
         Debug.Log("InCatapult");
 
-
-
+        
         if (launchTime <= timeToLaunch)
         {
             launchTime += Time.deltaTime;
@@ -91,6 +92,8 @@ public class CatapultLauncher : MonoBehaviour {
             Debug.Log("WORK!!!!!!!!!!!!!");
 
         }
+
+        releaseVolume.SetActive(true);
 
 
     }

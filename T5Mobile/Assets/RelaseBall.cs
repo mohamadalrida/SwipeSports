@@ -31,5 +31,6 @@ public class RelaseBall : MonoBehaviour {
         rb = theBall1.GetComponent<Rigidbody2D>();
 
         theBall1.attachedRigidbody.AddForce(transform.right * releaseSpeed);
+
     }
 }
