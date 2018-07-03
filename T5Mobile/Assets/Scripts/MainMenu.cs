@@ -19,7 +19,7 @@ public class MainMenu : MonoBehaviour {
 
     public void Play()
     {
-        Application.LoadLevel("GameTypeSelect");
+        SceneManager.LoadScene("GameTypeSelect");
     }
 
     public void Quit()
@@ -29,16 +29,16 @@ public class MainMenu : MonoBehaviour {
 
     public void LoadStore()
     {
-        Application.LoadLevel("Shop");
+        SceneManager.LoadScene("Shop");
     }
 
     public void Settings()
     {
-        Application.LoadLevel("Settings");
+        SceneManager.LoadScene("Settings");
     }
 
     public void Character()
     {
-        Application.LoadLevel("Character");
+        SceneManager.LoadScene("Character");
     }
 }

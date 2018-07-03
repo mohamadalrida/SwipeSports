@@ -379,6 +379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3352e386d5003e49a741aa6f7800719, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  throwAllowed: 1
   throwForce: 2
 --- !u!114 &79287685
 MonoBehaviour:
@@ -874,12 +875,12 @@ Prefab:
     - target: {fileID: 224357282714453710, guid: 30f1f5df8b822ed4d87e85ef88ebecbc,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 224357282714453710, guid: 30f1f5df8b822ed4d87e85ef88ebecbc,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 224357282714453710, guid: 30f1f5df8b822ed4d87e85ef88ebecbc,
         type: 2}

@@ -21,6 +21,7 @@ public class EndGamePanel : MonoBehaviour {
     public Canvas mainCanvas;
     public Canvas endCanvas;
 
+    public GameObject optionsMenu;
     public GameObject mainMenuConfirmation;
 
     public string nextLevel;
@@ -49,6 +50,11 @@ public class EndGamePanel : MonoBehaviour {
         SceneManager.LoadScene(nextLevel);
     }
 
+    public void Options()
+    {
+        optionsMenu.SetActive(true);
+    }
+
     public void MenuConfirmation()
     {
         mainMenuConfirmation.SetActive(true);
@@ -59,6 +65,7 @@ public class EndGamePanel : MonoBehaviour {
     public void BackToMenu()
     {
         mainMenuConfirmation.SetActive(false);
+        optionsMenu.SetActive(false);
     }
 
     public void BackToMainMenu()

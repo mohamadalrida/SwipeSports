@@ -322,7 +322,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -492,12 +492,12 @@ Prefab:
     - target: {fileID: 224357282714453710, guid: 30f1f5df8b822ed4d87e85ef88ebecbc,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 160
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 224357282714453710, guid: 30f1f5df8b822ed4d87e85ef88ebecbc,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 224357282714453710, guid: 30f1f5df8b822ed4d87e85ef88ebecbc,
         type: 2}
@@ -528,6 +528,16 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114981562607200830, guid: 30f1f5df8b822ed4d87e85ef88ebecbc,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114981562607200830, guid: 30f1f5df8b822ed4d87e85ef88ebecbc,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30f1f5df8b822ed4d87e85ef88ebecbc, type: 2}
