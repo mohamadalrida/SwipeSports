@@ -40,6 +40,13 @@ public class CatapultLauncher : MonoBehaviour {
 
         }
 
+        if (RelaseBall.releaseBall == true)
+        {
+            releaseVolume.SetActive(false);
+
+            RelaseBall.releaseBall = false;
+        }
+
     }
 
     private void OnTriggerStay2D(Collider2D Player)

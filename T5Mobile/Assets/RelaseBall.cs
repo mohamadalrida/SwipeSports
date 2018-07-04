@@ -10,6 +10,8 @@ public class RelaseBall : MonoBehaviour {
 
     public float releaseSpeed;
 
+    public static bool releaseBall = false;
+
     
 	// Use this for initialization
 	void Start () {
@@ -28,13 +30,15 @@ public class RelaseBall : MonoBehaviour {
     {
         Debug.Log("Release!!!");
 
-        theBall1.transform.parent = transform;
+        theBall1.transform.parent = null;
 
         rb = theBall1.GetComponent<Rigidbody2D>();
 
         theBall1.attachedRigidbody.AddForce(transform.right * releaseSpeed);
 
         rb.gravityScale = 1.0f;
+
+        releaseBall = true;
 
     }
 }
