@@ -8,12 +8,14 @@ public class WinLevel : MonoBehaviour {
     public GameObject Ball;
     public GameObject winTitle;
 
+    public string nextLevel;
+
     
     private void OnTriggerEnter2D(Collider2D Ball)
     {
         //winTitle.SetActive(true);
 
-        SceneManager.LoadScene("golftesting");
+        SceneManager.LoadScene(nextLevel);
     }
 
     // Update is called once per frame
