@@ -12,8 +12,6 @@ public class CheckResolution : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        BetterThan169 = PlayerPrefs.GetString("BetterThan169", BetterThan169);
-
         resolution.text = ("" + Screen.currentResolution);
 
         if (Screen.currentResolution.height >= 1440 && Screen.currentResolution.width > 2560)
@@ -25,8 +23,8 @@ public class CheckResolution : MonoBehaviour {
         else
         {
             BetterThan169 = "NOTBetterThan169";
-            PlayerPrefs.SetString("BetterThan169", "NotBetterThan169");
             Debug.Log("This ISN'T better than 16:9");
+            Debug.Log("" + BetterThan169);
         }
         
     }
