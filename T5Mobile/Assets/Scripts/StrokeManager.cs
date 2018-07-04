@@ -8,8 +8,7 @@ public class StrokeManager : MonoBehaviour {
 
     public static int strokesNumber;
     
-
-    public TextMeshProUGUI strokess;
+    public TextMeshProUGUI strokes;
     public TextMeshProUGUI par;
     public TextMeshProUGUI hole;
 
@@ -20,8 +19,7 @@ public class StrokeManager : MonoBehaviour {
 	void Start () {
 
         strokesNumber = 0;
-        strokess.text = "" + strokesNumber;
-        
+        strokes.text = "" + strokesNumber;
         par.text = "" + parNumber;
         hole.text = "" + holeNumber;
 
@@ -30,7 +28,9 @@ public class StrokeManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        strokess.text = "" + strokesNumber;
+        strokes.text = "" + strokesNumber;
 
 	}
+
+    
 }
