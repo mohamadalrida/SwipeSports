@@ -147,7 +147,7 @@ PlayerSettings:
   m_ColorGamuts: 00000000
   targetPixelDensity: 260
   resolutionScalingMode: 0
-  androidSupportedAspectRatio: 0
+  androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Good_Enough_Studios.Swipe_Sports

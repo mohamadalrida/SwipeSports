@@ -1381,7 +1381,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.5999756, y: 7.899994}
+  m_AnchoredPosition: {x: -2.5999756, y: 7.9000244}
   m_SizeDelta: {x: -1021.5815, y: -715.3939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1170339483
@@ -1620,7 +1620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.5999, y: 83.1}
+  m_AnchoredPosition: {x: -2.5998535, y: 83.1}
   m_SizeDelta: {x: -1021.5815, y: -715.3939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1506263851
@@ -1833,7 +1833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9eb737a12bcf9947afefba6c529129e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GolfLevels: Level 2
+  GolfLevels: Level 1
   BasketBallLevels: 
   SoccerLevels: 
 --- !u!4 &1574684115
@@ -2544,7 +2544,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 25}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 333.8, y: 2.100006}
+  m_AnchoredPosition: {x: 333.80005, y: 2.0999756}
   m_SizeDelta: {x: -1021.5815, y: -715.3939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2097364831
