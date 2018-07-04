@@ -53,6 +53,8 @@ public class SwipeThrow : MonoBehaviour {
                 rb.isKinematic = false;
                 rb.AddForce(-direction / timeInterval * throwForce);
 
+                // Play Audio Here of ball hit
+
                 throwAllowed = false;
             }
         }
