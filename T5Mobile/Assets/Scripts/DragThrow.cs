@@ -19,11 +19,17 @@ public class DragThrow : MonoBehaviour
 
     public float throwForce = 0.3f;
 
+    public AudioClip ballHit;
+    private AudioSource audioSource;
+
 
     // Use this for initialization
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        audioSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -51,6 +57,8 @@ public class DragThrow : MonoBehaviour
             rb.AddForce(-direction / timeInterval * throwForce);
 
             // Play Audio Here of ball hit
+
+            audioSource.Play();
 
             //StrokeManager.strokesNumber++;
 
