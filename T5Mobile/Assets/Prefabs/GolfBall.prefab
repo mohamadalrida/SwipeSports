@@ -401,6 +401,7 @@ MonoBehaviour:
   throwAllowed: 1
   throwForce: 0.2
   ballHit: {fileID: 8300000, guid: 5da732436efe3ef42b8d3959a154a550, type: 3}
+  ballBounce: {fileID: 0}
 --- !u!114 &114914476157560052
 MonoBehaviour:
   m_ObjectHideFlags: 1

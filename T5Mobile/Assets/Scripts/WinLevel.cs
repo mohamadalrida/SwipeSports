@@ -130,7 +130,7 @@ public class WinLevel : MonoBehaviour
 
         // Play Audio of Clapping and winning
 
-        SceneManager.LoadScene(nextLevel);
+        //SceneManager.LoadScene(nextLevel);
     }
 
     //Continues to the next level
