@@ -10,13 +10,15 @@ public class RelaseBall : MonoBehaviour {
 
     public float releaseSpeed;
 
+    
 	// Use this for initialization
 	void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 
@@ -33,5 +35,6 @@ public class RelaseBall : MonoBehaviour {
         theBall1.attachedRigidbody.AddForce(transform.right * releaseSpeed);
 
         rb.gravityScale = 1.0f;
+
     }
 }
