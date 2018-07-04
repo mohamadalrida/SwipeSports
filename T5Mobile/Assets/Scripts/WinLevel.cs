@@ -118,6 +118,12 @@ public class WinLevel : MonoBehaviour
             Strokes9 = StrokeManager.strokesNumber;
         }
 
+<<<<<<< HEAD
+=======
+        // Play Audio of Clapping and winning
+
+        SceneManager.LoadScene(nextLevel);
+>>>>>>> e4a979d807aed9b5d51b41b623308b47e2794568
     }
 
     //Continues to the next level
