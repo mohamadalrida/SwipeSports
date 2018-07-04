@@ -30,13 +30,15 @@ public class RelaseBall : MonoBehaviour {
     {
         Debug.Log("Release!!!");
 
-        theBall1.transform.parent = null;
+        theBall1.transform.parent = transform;
 
         rb = theBall1.GetComponent<Rigidbody2D>();
 
         theBall1.attachedRigidbody.AddForce(transform.right * releaseSpeed);
 
         rb.gravityScale = 1.0f;
+
+        theBall1.transform.parent = null;
 
         releaseBall = true;
 
