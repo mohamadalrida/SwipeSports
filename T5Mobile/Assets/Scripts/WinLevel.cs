@@ -53,11 +53,21 @@ public class WinLevel : MonoBehaviour
     public TextMeshProUGUI strokeNo;
     public TextMeshProUGUI parNo;
 
+    // Audio
+    public AudioClip clap;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D Ball)
     {
         EndGame();
         AddToTable();
+
+        audioSource.Play();
     }
 
     public void EndGame()

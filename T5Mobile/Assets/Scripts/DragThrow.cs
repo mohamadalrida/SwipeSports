@@ -20,7 +20,9 @@ public class DragThrow : MonoBehaviour
     public float throwForce = 0.3f;
 
     public AudioClip ballHit;
+    public AudioClip ballBounce;
     private AudioSource audioSource;
+    private AudioSource audioSourceBounce;
 
 
     // Use this for initialization
@@ -29,6 +31,7 @@ public class DragThrow : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         audioSource = GetComponent<AudioSource>();
+        audioSourceBounce = GetComponent<AudioSource>();
 
     }
 
@@ -65,5 +68,10 @@ public class DragThrow : MonoBehaviour
             throwAllowed = false;
         }
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
     }
 }
