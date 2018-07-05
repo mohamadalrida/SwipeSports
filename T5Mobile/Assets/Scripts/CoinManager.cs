@@ -20,9 +20,7 @@ public class CoinManager : MonoBehaviour {
 	void Update () {
 
         coinText.text = " "+ Coins;
-
         
-
     }
 
     private void OnTriggerEnter2D()
@@ -33,5 +31,11 @@ public class CoinManager : MonoBehaviour {
         Debug.Log("< color = red > +1! Current Coins: " + Coins);
 
         Destroy(gameObject);
+    }
+
+    public void RemoveCoins()
+    {
+        Coins = 0;
+        PlayerPrefs.SetInt("Coins", Coins);
     }
 }
