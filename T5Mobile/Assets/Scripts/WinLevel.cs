@@ -93,10 +93,15 @@ public class WinLevel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D Ball)
     {
-        EndGame();
-        AddToTable();
-
         audioSource.Play();
+        StartCoroutine(FinishLevel());
+        AddToTable();
+    }
+
+    IEnumerator FinishLevel()
+    {
+        yield return new WaitForSeconds(2);
+        EndGame();
     }
 
     public void EndGame()
