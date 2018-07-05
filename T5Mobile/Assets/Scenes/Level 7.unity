@@ -344,6 +344,11 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: -657.84
       objectReference: {fileID: 0}
+    - target: {fileID: 114205314535745736, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
+        type: 2}
+      propertyPath: holeNumber
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7776a83dc554234bb8ac7fbfbfaa18a, type: 2}
   m_IsPrefabParent: 0
@@ -765,6 +770,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: BackToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 224176777780909440, guid: f94972cee5efbd64c82b7d8486e25644,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -15.000061
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f94972cee5efbd64c82b7d8486e25644, type: 2}
@@ -2918,7 +2928,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4877455231362644, guid: d694597845865c749801946e0c60c36f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.8959016
+      value: 0.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877455231362644, guid: d694597845865c749801946e0c60c36f, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.93
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d694597845865c749801946e0c60c36f, type: 2}

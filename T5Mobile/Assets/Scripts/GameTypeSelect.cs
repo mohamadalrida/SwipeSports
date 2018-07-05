@@ -9,6 +9,8 @@ public class GameTypeSelect : MonoBehaviour {
     public string BasketBallLevels;
     public string SoccerLevels;
 
+    public Animator transitionAnim;
+
 
 	// Use this for initialization
 	void Start () {
@@ -23,17 +25,24 @@ public class GameTypeSelect : MonoBehaviour {
 
     public void GolfLevel()
     {
-        Application.LoadLevel(GolfLevels);
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        transitionAnim.SetTrigger("end");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(GolfLevels);
     }
 
     public void BasketBallLevel()
     {
-        Application.LoadLevel(BasketBallLevels);
+        SceneManager.LoadScene(BasketBallLevels);
     }
 
     public void Soccer()
     {
-        Application.LoadLevel(SoccerLevels);
+        SceneManager.LoadScene(SoccerLevels);
     }
 
 }

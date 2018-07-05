@@ -1836,6 +1836,7 @@ MonoBehaviour:
   GolfLevels: Level 1
   BasketBallLevels: 
   SoccerLevels: 
+  transitionAnim: {fileID: 0}
 --- !u!4 &1574684115
 Transform:
   m_ObjectHideFlags: 0
