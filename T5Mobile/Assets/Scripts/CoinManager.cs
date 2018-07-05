@@ -33,9 +33,9 @@ public class CoinManager : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    public void RemoveCoins()
-    {
-        Coins = 0;
-        PlayerPrefs.SetInt("Coins", Coins);
-    }
+    //public void RemoveCoins()
+    //{
+    //    Coins = 0;
+    //    PlayerPrefs.SetInt("Coins", Coins);
+    //}
 }

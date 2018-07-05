@@ -189,6 +189,11 @@ public class WinLevel : MonoBehaviour
         holeFinishCanvas.enabled = false;
         SceneManager.LoadScene(nextLevel);
     }
+
+    //public void FinalLevel()
+    //{
+
+    //}
 }
 
 
