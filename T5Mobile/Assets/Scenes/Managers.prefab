@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 212299866902219728}
   - component: {fileID: 61040288210819804}
   - component: {fileID: 114282259102236926}
+  - component: {fileID: 82439410059813298}
   m_Layer: 0
   m_Name: EndScreenManager
   m_TagString: Untagged
@@ -112,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1679886339584558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -656.96, y: -512.34, z: -12}
+  m_LocalPosition: {x: -656.96, y: -512.51, z: -12}
   m_LocalScale: {x: 0.66814345, y: 2.6152444, z: 1}
   m_Children: []
   m_Father: {fileID: 4798454465610448}
@@ -156,6 +157,101 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.05, y: 0.32}
   m_EdgeRadius: 0
+--- !u!82 &82439410059813298
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1679886339584558}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114205314535745736
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,11 +290,10 @@ MonoBehaviour:
   Levels9: {fileID: 0}
   Ball: {fileID: 0}
   winTitle: {fileID: 0}
-  nextLevel: Level 3
-  levelNumber: 2
+  nextLevel: Level 2
+  levelNumber: 1
   parNumber: 3
-  holeFinishCanvas: {fileID: 223759022314092004, guid: f94972cee5efbd64c82b7d8486e25644,
-    type: 2}
+  holeFinishCanvas: {fileID: 0}
   levelNo: {fileID: 0}
   strokeNo: {fileID: 0}
   parNo: {fileID: 0}
@@ -216,6 +311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCanvas: {fileID: 0}
   optionsCanvas: {fileID: 0}
+  holeFinishCanvas: {fileID: 223759022314092004, guid: f94972cee5efbd64c82b7d8486e25644,
+    type: 2}
   optionsMenu: {fileID: 0}
   mainMenuConfirmation: {fileID: 0}
 --- !u!212 &212299866902219728
