@@ -75,6 +75,7 @@ public class DragThrow : MonoBehaviour
         if ( collision.gameObject.tag == "Ground")
         {
             // play bounce audio here
+            audioSource.PlayOneShot(ballBounce);
         }
     }
 }

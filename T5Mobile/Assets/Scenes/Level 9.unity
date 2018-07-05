@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 729964812}
   m_Layer: 0
   m_Name: GrassSection (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 985637231}
   m_Layer: 0
   m_Name: CurvedGrass
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2448,6 +2448,10 @@ Prefab:
         type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783724797737684, guid: f94972cee5efbd64c82b7d8486e25644, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f94972cee5efbd64c82b7d8486e25644, type: 2}
