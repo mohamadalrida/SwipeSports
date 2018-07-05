@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CoinManager : MonoBehaviour {
 
     public static int Coins;
-    public Text coinText;
+    public TextMeshProUGUI coinText;
 
     // Use this for initialization
     void Start () {
@@ -18,7 +19,7 @@ public class CoinManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        coinText.text = "Coins: " + Coins;
+        coinText.text = " "+ Coins;
 
         
 
