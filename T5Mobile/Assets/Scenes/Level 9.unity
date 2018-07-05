@@ -724,7 +724,7 @@ GameObject:
   - component: {fileID: 729964812}
   m_Layer: 0
   m_Name: GrassSection (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 985637231}
   m_Layer: 0
   m_Name: CurvedGrass
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
