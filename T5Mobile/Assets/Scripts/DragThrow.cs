@@ -63,7 +63,7 @@ public class DragThrow : MonoBehaviour
 
             audioSource.Play();
 
-            //StrokeManager.strokesNumber++;
+            StrokeManager.strokesNumber++;
 
             throwAllowed = false;
         }

@@ -22,9 +22,7 @@ public class EndGamePanel : MonoBehaviour {
     //Turns on the panels for the menu
     public GameObject optionsMenu;
     public GameObject mainMenuConfirmation;
-
-    //Editable string that displays the next number
-    public string nextLevel;
+    
 
     //-----------------------------------------------------------------------------------------------------//
     //------------------------------------- CODE ----------------------------------------------------------//
