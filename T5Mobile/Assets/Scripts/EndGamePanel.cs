@@ -18,11 +18,11 @@ public class EndGamePanel : MonoBehaviour {
     //Canvas' that get turned on and off
     public Canvas mainCanvas;
     public Canvas optionsCanvas;
+    public Canvas holeFinishCanvas;
 
     //Turns on the panels for the menu
     public GameObject optionsMenu;
     public GameObject mainMenuConfirmation;
-    
 
     //-----------------------------------------------------------------------------------------------------//
     //------------------------------------- CODE ----------------------------------------------------------//
@@ -36,6 +36,7 @@ public class EndGamePanel : MonoBehaviour {
         Time.timeScale = 1;
         mainCanvas.enabled = true;
         optionsCanvas.enabled = false;
+        holeFinishCanvas.enabled = false;
 	}
 
 
