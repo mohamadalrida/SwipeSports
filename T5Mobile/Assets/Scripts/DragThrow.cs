@@ -21,6 +21,7 @@ public class DragThrow : MonoBehaviour
 
     public AudioClip ballHit;
     public AudioClip ballBounce;
+    public AudioClip bouncy;
     private AudioSource audioSource;
     private AudioSource audioSourceBounce;
 
@@ -76,6 +77,11 @@ public class DragThrow : MonoBehaviour
         {
             // play bounce audio here
             audioSource.PlayOneShot(ballBounce);
+        }
+
+        if (collision.gameObject.tag == "Bounce")
+        {
+            audioSource.PlayOneShot(bouncy);
         }
     }
 }
