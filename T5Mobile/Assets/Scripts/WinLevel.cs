@@ -46,7 +46,7 @@ public class WinLevel : MonoBehaviour
     public int levelNumber;
     public int parNumber;
 
-    public Canvas endGameCanvas;
+    public Canvas holeFinishCanvas;
 
     //Text that the numbers are set to
     public TextMeshProUGUI levelNo;
@@ -101,7 +101,7 @@ public class WinLevel : MonoBehaviour
 
     public void EndGame()
     {
-        endGameCanvas.enabled = true;
+        holeFinishCanvas.enabled = true;
 
         levelNo.text = "Completed Hole " + levelNumber;
         strokeNo.text = "in " + StrokeManager.strokesNumber + " strokes.";
@@ -181,7 +181,7 @@ public class WinLevel : MonoBehaviour
     //Continues to the next level
     public void Continue()
     {
-        endGameCanvas.enabled = true;
+        holeFinishCanvas.enabled = false;
         SceneManager.LoadScene(nextLevel);
     }
 }

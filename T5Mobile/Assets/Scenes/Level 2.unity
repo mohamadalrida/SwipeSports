@@ -1002,11 +1002,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2026971324}
   m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
---- !u!223 &940888465 stripped
-Canvas:
-  m_PrefabParentObject: {fileID: 223759022314092004, guid: f94972cee5efbd64c82b7d8486e25644,
-    type: 2}
-  m_PrefabInternal: {fileID: 2026971324}
 --- !u!1 &980417671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,10 +1646,41 @@ Prefab:
       propertyPath: m_RootOrder
       value: 31
       objectReference: {fileID: 0}
-    - target: {fileID: 1679886339584558, guid: d7776a83dc554234bb8ac7fbfbfaa18a, type: 2}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 114205314535745736, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
+        type: 2}
+      propertyPath: strokes
+      value: 
+      objectReference: {fileID: 606430825}
+    - target: {fileID: 114205314535745736, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
+        type: 2}
+      propertyPath: par
+      value: 
+      objectReference: {fileID: 1780055949}
+    - target: {fileID: 114205314535745736, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
+        type: 2}
+      propertyPath: hole
+      value: 
+      objectReference: {fileID: 1362772922}
+    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
+        type: 2}
+      propertyPath: mainCanvas
+      value: 
+      objectReference: {fileID: 1649323061}
+    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
+        type: 2}
+      propertyPath: optionsCanvas
+      value: 
+      objectReference: {fileID: 819799624}
+    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
+        type: 2}
+      propertyPath: optionsMenu
+      value: 
+      objectReference: {fileID: 583903221}
+    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
+        type: 2}
+      propertyPath: mainMenuConfirmation
+      value: 
+      objectReference: {fileID: 562845756}
     - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
         type: 2}
       propertyPath: Levels1
@@ -1697,34 +1723,14 @@ Prefab:
       objectReference: {fileID: 25639856}
     - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
         type: 2}
-      propertyPath: Ball
-      value: 
-      objectReference: {fileID: 391528677}
-    - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
       propertyPath: Levels9
       value: 
       objectReference: {fileID: 2137945586}
     - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
         type: 2}
-      propertyPath: nextLevel
-      value: Level 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: levelNumber
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: parNumber
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: endGameCanvas
+      propertyPath: Ball
       value: 
-      objectReference: {fileID: 940888465}
+      objectReference: {fileID: 391528677}
     - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
         type: 2}
       propertyPath: levelNo
@@ -1740,59 +1746,6 @@ Prefab:
       propertyPath: parNo
       value: 
       objectReference: {fileID: 862415918}
-    - target: {fileID: 114205314535745736, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: strokes
-      value: 
-      objectReference: {fileID: 606430825}
-    - target: {fileID: 114205314535745736, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: par
-      value: 
-      objectReference: {fileID: 1780055949}
-    - target: {fileID: 114205314535745736, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: hole
-      value: 
-      objectReference: {fileID: 1362772922}
-    - target: {fileID: 114205314535745736, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: holeNumber
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: mainCanvas
-      value: 
-      objectReference: {fileID: 1649323061}
-    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: optionsCanvas
-      value: 
-      objectReference: {fileID: 819799624}
-    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: optionsMenu
-      value: 
-      objectReference: {fileID: 583903221}
-    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: mainMenuConfirmation
-      value: 
-      objectReference: {fileID: 562845756}
-    - target: {fileID: 114283298150448622, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
-        type: 2}
-      propertyPath: nextLevel
-      value: Level 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849365272873124, guid: d7776a83dc554234bb8ac7fbfbfaa18a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -512.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4849365272873124, guid: d7776a83dc554234bb8ac7fbfbfaa18a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -656.96
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7776a83dc554234bb8ac7fbfbfaa18a, type: 2}
   m_IsPrefabParent: 0
@@ -2897,7 +2850,7 @@ Prefab:
     - target: {fileID: 223675875018571400, guid: f94972cee5efbd64c82b7d8486e25644,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224762001152699198, guid: f94972cee5efbd64c82b7d8486e25644,
         type: 2}

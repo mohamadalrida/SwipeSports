@@ -88,6 +88,8 @@ public class StopBallVelocity : MonoBehaviour {
                            
                 if (currentBallSpeed.x < ballStopSpeedpos && currentBallSpeed.x > ballStopSpeedneg)       // If the ball is between a certain velocity in either direction
                 {
+                    
+
                     timeBetweenDirection += Time.deltaTime;                                               // Start second timer that tracks when the ball is slow enough, so collisions with wall wont stop the ball
 
                     if (timeBetweenDirection >= timeBallStopped)                                                        // If the ball is slow enough for X amount of secoonds 
@@ -122,7 +124,7 @@ public class StopBallVelocity : MonoBehaviour {
 
                             timeBetweenDirection = 0;                                                     // Reset ball slowed timer
 
-                            StrokeManager.strokesNumber++;
+                            
                         }
                     }
 
