@@ -57,6 +57,9 @@ public class WinLevel : MonoBehaviour
     public AudioClip clap;
     private AudioSource audioSource;
 
+    //Animation
+    public Animator endLevel;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -106,11 +109,18 @@ public class WinLevel : MonoBehaviour
 
     public void EndGame()
     {
-        holeFinishCanvas.enabled = true;
-
         levelNo.text = "Completed Hole " + levelNumber;
         strokeNo.text = "in " + StrokeManager.strokesNumber + " strokes.";
         parNo.text = "Par: " + parNumber;
+
+        StartCoroutine(PlayEndAnimation());
+    }
+
+    IEnumerator PlayEndAnimation()
+    {
+        endLevel.SetTrigger("end");
+        yield return new WaitForSeconds(1.5f);
+        holeFinishCanvas.enabled = true;
     }
 
     public void AddToTable()

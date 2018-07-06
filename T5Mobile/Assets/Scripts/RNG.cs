@@ -4,22 +4,31 @@ using UnityEngine;
 
 public class RNG : MonoBehaviour {
 
-    private int chance;
+    public int chance;
 
     public int percentage;
 
     public GameObject coin;
 
+    //public Transform coinPlace;
+
+
 	// Use this for initialization
 	void Start ()
     {
+        coin.SetActive(false);
+
         chance = Random.Range(0, 100);
 
         Debug.Log("RNG" + chance);
-
-        if (chance >= percentage)
+            
+        if (percentage >= chance)
         {
-            Instantiate(coin);
+            coin.SetActive(true);
+        }
+        else if (percentage < chance)
+        {
+            coin.SetActive(false);
         }
 
     }

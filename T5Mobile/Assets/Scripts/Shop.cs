@@ -37,31 +37,35 @@ public class Shop : MonoBehaviour {
         Purchased5 = PlayerPrefs.GetInt("Purchased5", Purchased5);
         Purchased6 = PlayerPrefs.GetInt("Purchased6", Purchased6);
 
-        if (CoinManager.Coins < Cost1 || Purchased1 == 0)
+        if (CoinManager.Coins < Cost1 || Purchased1 == 1)
         {
             btn1.interactable = false;
         }
+        //else if (CoinManager.Coins >= Cost1)
+        //{
+        ////    btn1.interactable = true;
+        //}
 
-        if (CoinManager.Coins < Cost2 || Purchased2 == 0)
+        if (CoinManager.Coins < Cost2 || Purchased2 == 1)
         {
             btn2.interactable = false;
         }
 
-        if (CoinManager.Coins < Cost3 || Purchased3 == 0)
+        if (CoinManager.Coins < Cost3 || Purchased3 == 1)
         {
             btn3.interactable = false;
         }
 
-        if (CoinManager.Coins < Cost4 || Purchased4 == 0)
+        if (CoinManager.Coins < Cost4 || Purchased4 == 1)
         {
             btn4.interactable = false;
         }
 
-        if (CoinManager.Coins < Cost5 || Purchased5 == 0)
+        if (CoinManager.Coins < Cost5 || Purchased5 == 1)
         {
             btn5.interactable = false;
         }
-        if (CoinManager.Coins < Cost6 || Purchased6 == 0)
+        if (CoinManager.Coins < Cost6 || Purchased6 == 1)
         {
             btn6.interactable = false;
         }
@@ -77,6 +81,8 @@ public class Shop : MonoBehaviour {
 
             Purchased1 = 1;
             PlayerPrefs.SetInt("Purchased1", Purchased1);
+
+            
         }
         
     }

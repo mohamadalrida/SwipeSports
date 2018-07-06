@@ -26,7 +26,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4557561788466950
 Transform:
   m_ObjectHideFlags: 1
@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1653666359091566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.3689694, y: -0.40824348, z: -0.099609375}
+  m_LocalPosition: {x: 0, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -51,5 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f6658f3a7bb8a043a04519859048e28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: 10
-  coin: {fileID: 1544846078932950, guid: 94718d13bd49d634d8e5cb69c6872f9e, type: 2}
+  chance: 0
+  percentage: 50
+  coin: {fileID: 0}

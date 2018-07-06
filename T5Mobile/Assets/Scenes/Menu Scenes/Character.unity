@@ -397,6 +397,7 @@ MonoBehaviour:
   throwForce: 0.2
   ballHit: {fileID: 0}
   ballBounce: {fileID: 0}
+  bouncy: {fileID: 0}
 --- !u!58 &79287686
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -740,6 +741,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ea75016f43f324fb643fee551590d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  btn1: {fileID: 1326997718}
+  btn2: {fileID: 606989287}
+  btn3: {fileID: 47478000}
+  btn4: {fileID: 117363968}
+  btn5: {fileID: 1586068602}
+  btn6: {fileID: 1924469779}
 --- !u!1 &272991685
 GameObject:
   m_ObjectHideFlags: 0
