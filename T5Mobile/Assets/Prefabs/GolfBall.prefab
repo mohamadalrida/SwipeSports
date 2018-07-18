@@ -403,6 +403,8 @@ MonoBehaviour:
   ballHit: {fileID: 8300000, guid: 5da732436efe3ef42b8d3959a154a550, type: 3}
   ballBounce: {fileID: 8300000, guid: 5761ca0106cb28544acfe5d2be44c3e0, type: 3}
   bouncy: {fileID: 8300000, guid: dbfadef95052e024eacfe1076cb2247e, type: 3}
+  readyText: {fileID: 0}
+  waitText: {fileID: 0}
 --- !u!114 &114914476157560052
 MonoBehaviour:
   m_ObjectHideFlags: 1

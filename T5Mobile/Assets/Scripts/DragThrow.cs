@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class DragThrow : MonoBehaviour
 {
@@ -24,6 +26,9 @@ public class DragThrow : MonoBehaviour
     public AudioClip bouncy;
     private AudioSource audioSource;
     private AudioSource audioSourceBounce;
+
+    public TextMeshProUGUI readyText;
+    public TextMeshProUGUI waitText;
 
 
     // Use this for initialization
@@ -67,6 +72,17 @@ public class DragThrow : MonoBehaviour
             StrokeManager.strokesNumber++;
 
             throwAllowed = false;
+        }
+
+        if (throwAllowed == true)
+        {
+            readyText.enabled = true;
+            waitText.enabled = false;
+        }
+        else
+        {
+            readyText.enabled = false;
+            waitText.enabled = true;
         }
 
     }
