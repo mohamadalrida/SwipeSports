@@ -1271,6 +1271,16 @@ Prefab:
       propertyPath: timeBallStopped
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: readyText
+      value: 
+      objectReference: {fileID: 884971396}
+    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: waitText
+      value: 
+      objectReference: {fileID: 884971395}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
   m_IsPrefabParent: 0
@@ -1549,6 +1559,18 @@ Canvas:
 --- !u!114 &884971394 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114017677814920730, guid: f94972cee5efbd64c82b7d8486e25644,
+    type: 2}
+  m_PrefabInternal: {fileID: 884971388}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+--- !u!114 &884971395 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114555527231676644, guid: f94972cee5efbd64c82b7d8486e25644,
+    type: 2}
+  m_PrefabInternal: {fileID: 884971388}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+--- !u!114 &884971396 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114382479472281968, guid: f94972cee5efbd64c82b7d8486e25644,
     type: 2}
   m_PrefabInternal: {fileID: 884971388}
   m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}

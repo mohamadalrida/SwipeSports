@@ -119,6 +119,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2026971324}
   m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+--- !u!114 &56663395 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114555527231676644, guid: f94972cee5efbd64c82b7d8486e25644,
+    type: 2}
+  m_PrefabInternal: {fileID: 2026971324}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
 --- !u!114 &178172081 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114426312226714790, guid: f94972cee5efbd64c82b7d8486e25644,
@@ -236,7 +242,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4012206306712644, guid: 94718d13bd49d634d8e5cb69c6872f9e, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1544846078932950, guid: 94718d13bd49d634d8e5cb69c6872f9e, type: 2}
       propertyPath: m_IsActive
@@ -1128,7 +1134,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4022517698453474, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1977042584421098, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
       propertyPath: m_Layer
@@ -1147,6 +1153,16 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: readyText
+      value: 
+      objectReference: {fileID: 1041399274}
+    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: waitText
+      value: 
+      objectReference: {fileID: 56663395}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
   m_IsPrefabParent: 0
@@ -1498,6 +1514,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1041399274 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114382479472281968, guid: f94972cee5efbd64c82b7d8486e25644,
+    type: 2}
+  m_PrefabInternal: {fileID: 2026971324}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
 --- !u!95 &1060499247 stripped
 Animator:
   m_PrefabParentObject: {fileID: 95380542539164592, guid: 6e5639e7fea5e56449e635b202b41c80,

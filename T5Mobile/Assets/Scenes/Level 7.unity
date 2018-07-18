@@ -861,6 +861,18 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 180755636}
   m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+--- !u!114 &180755650 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114555527231676644, guid: f94972cee5efbd64c82b7d8486e25644,
+    type: 2}
+  m_PrefabInternal: {fileID: 180755636}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+--- !u!114 &180755651 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114382479472281968, guid: f94972cee5efbd64c82b7d8486e25644,
+    type: 2}
+  m_PrefabInternal: {fileID: 180755636}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
 --- !u!1 &210900958
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,6 +2044,16 @@ Prefab:
       propertyPath: timeBallStopped
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: readyText
+      value: 
+      objectReference: {fileID: 180755651}
+    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: waitText
+      value: 
+      objectReference: {fileID: 180755650}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
   m_IsPrefabParent: 0
@@ -2107,7 +2129,7 @@ Transform:
   m_LocalScale: {x: 1, y: 0.53156096, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &866686551 stripped
 MonoBehaviour:

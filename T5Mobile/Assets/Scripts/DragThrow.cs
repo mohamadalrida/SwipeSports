@@ -39,6 +39,8 @@ public class DragThrow : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         audioSourceBounce = GetComponent<AudioSource>();
 
+        waitText.enabled = false;
+
     }
 
     // Update is called once per frame
