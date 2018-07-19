@@ -88,44 +88,47 @@ public class StopBallVelocity : MonoBehaviour {
                            
                 if (currentBallSpeed.x < ballStopSpeedpos && currentBallSpeed.x > ballStopSpeedneg)       // If the ball is between a certain velocity in either direction
                 {
-                    
 
-                    timeBetweenDirection += Time.deltaTime;                                               // Start second timer that tracks when the ball is slow enough, so collisions with wall wont stop the ball
-
-                    if (timeBetweenDirection >= timeBallStopped)                                                        // If the ball is slow enough for X amount of secoonds 
+                    if (currentBallSpeed.y < ballStopSpeedpos && currentBallSpeed.y > ballStopSpeedneg)
                     {
+                        timeBetweenDirection += Time.deltaTime;                                               // Start second timer that tracks when the ball is slow enough, so collisions with wall wont stop the ball
+
+                        if (timeBetweenDirection >= timeBallStopped)                                                        // If the ball is slow enough for X amount of secoonds 
+                        {
 
                     
 
-                        Debug.Log("Stopping Speed Reached ");
+                            Debug.Log("Stopping Speed Reached ");
 
-                        rb.velocity = new Vector2(0, 0);                                                  // Freeze the ball
-                        rb.gravityScale = 0.0f;
-                        rb.freezeRotation = true;
+                            rb.velocity = new Vector2(0, 0);                                                  // Freeze the ball
+                            rb.gravityScale = 0.0f;
+                            rb.freezeRotation = true;
 
-                        Debug.Log("Ball Stopped ");
+                            Debug.Log("Ball Stopped ");
 
-                        if (rb.freezeRotation == true)                                                    // Add Stroke
-                        {
-                            //StrokeManager.strokesNumber++;
-                        }
+                            if (rb.freezeRotation == true)                                                    // Add Stroke
+                            {
+                                //StrokeManager.strokesNumber++;
+                            }
 
-                        waitTime = 0;                                                                     // Reset waitTime
+                            waitTime = 0;                                                                     // Reset waitTime
 
-                        if (waitTime == 0)                                                                // If wait has been reset, reset ball settings
-                        {   
-                            rb.velocity = new Vector2(0, 0);
-                            //rb.gravityScale = 1.0f;          // Disabling to reset on release of swipe
-                            rb.freezeRotation = false;
+                            if (waitTime == 0)                                                                // If wait has been reset, reset ball settings
+                            {   
+                                rb.velocity = new Vector2(0, 0);
+                                //rb.gravityScale = 1.0f;          // Disabling to reset on release of swipe
+                                rb.freezeRotation = false;
 
-                            thrown = true;
+                                thrown = true;
                             
-                            GetComponent<DragThrow>().throwAllowed = true;                                // Allow next stoke to be taken
+                                GetComponent<DragThrow>().throwAllowed = true;                                // Allow next stoke to be taken
 
-                            timeBetweenDirection = 0;                                                     // Reset ball slowed timer
+                                timeBetweenDirection = 0;                                                     // Reset ball slowed timer
 
                             
-                        }
+                            }
+                    }
+                        
                     }
 
                 }
