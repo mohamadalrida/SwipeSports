@@ -12,12 +12,12 @@ public class ADMoney : MonoBehaviour {
         AdMoney = PlayerPrefs.GetInt("AdMoney",AdMoney);
 	}
 	
-	public void ShowAd()
-    {
-        if (Advertisement.IsReady())
-        {
-            Advertisement.Show();
-        }
-    }
+	//public void ShowAd()
+    //{
+    //    if (//Advertisement.IsReady())
+    //    {
+    //        //Advertisement.Show();
+    //    }
+    //}
 }
 //2685945
