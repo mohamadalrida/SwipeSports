@@ -21,6 +21,8 @@ public class EquipMenu : MonoBehaviour {
         Shop.Purchased5 = PlayerPrefs.GetInt("Purchased5", Shop.Purchased5);
         Shop.Purchased6 = PlayerPrefs.GetInt("Purchased6", Shop.Purchased6);
 
+        Debug.Log("" + Shop.Purchased1);
+
         if (Shop.Purchased1 == 1)
         {
             btn1.enabled = true;
