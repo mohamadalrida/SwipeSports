@@ -1554,6 +1554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4082c9a7442a11749b0a7add24a3c676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  adMoney: {fileID: 1590861866}
 --- !u!4 &846398442
 Transform:
   m_ObjectHideFlags: 0
@@ -3517,7 +3518,7 @@ GameObject:
   - component: {fileID: 1590861867}
   - component: {fileID: 1590861866}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: AdMoney
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
