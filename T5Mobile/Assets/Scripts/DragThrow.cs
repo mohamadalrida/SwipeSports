@@ -30,6 +30,10 @@ public class DragThrow : MonoBehaviour
     public TextMeshProUGUI readyText;
     public TextMeshProUGUI waitText;
 
+    // resetting player position
+    public GameObject player;
+    private Vector2 previousSpot;
+
 
     // Use this for initialization
     void Start()
@@ -78,6 +82,8 @@ public class DragThrow : MonoBehaviour
 
         if (throwAllowed == true)
         {
+            previousSpot = player.transform.position;
+
             readyText.enabled = true;
             waitText.enabled = false;
         }
@@ -101,5 +107,12 @@ public class DragThrow : MonoBehaviour
         {
             audioSource.PlayOneShot(bouncy);
         }
+
+        if( collision.gameObject.tag == "BallReset")
+        {
+            Debug.Log("hit Reset Zone");
+            player.transform.position = previousSpot;
+        }
     }
+
 }
