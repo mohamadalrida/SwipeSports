@@ -34,7 +34,7 @@ public class DragThrow : MonoBehaviour
     public TextMeshProUGUI waitText;
 
     // resetting player position
-    //public GameObject player;
+    public GameObject player;
     private Vector2 previousSpot;
 
 
@@ -86,7 +86,7 @@ public class DragThrow : MonoBehaviour
 
         if (throwAllowed == true)
         {
-            previousSpot = transform.position;
+            previousSpot = player.transform.position;
 
             readyText.enabled = true;
             waitText.enabled = false;
@@ -115,6 +115,7 @@ public class DragThrow : MonoBehaviour
         if( collision.gameObject.tag == "BallReset")
         {
             Debug.Log("hit Reset Zone");
+<<<<<<< HEAD
             transform.position = previousSpot;
 
             audioSource.PlayOneShot(whistle, whistleVolume);
@@ -122,6 +123,9 @@ public class DragThrow : MonoBehaviour
             rb.velocity = new Vector2(0, 0);                                                  // Freeze the ball
             rb.gravityScale = 0.0f;
             rb.freezeRotation = true;
+=======
+            player.transform.position = previousSpot;
+>>>>>>> parent of a52fb6f... script reset
         }
     }
 
