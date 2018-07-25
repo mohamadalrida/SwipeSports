@@ -76,6 +76,7 @@ public class DragThrow : MonoBehaviour
             audioSource.Play();
 
             StrokeManager.strokesNumber++;
+            SoccerManager.yourGoals++;
 
             throwAllowed = false;
         }

@@ -39,12 +39,7 @@ public class EndGamePanel : MonoBehaviour {
         holeFinishCanvas.enabled = false;
 	}
 
-
-
     
-
-
-
     //Shows the options menu
     public void Options()
     {

@@ -36,10 +36,7 @@ public class WinLevel : MonoBehaviour
     public  TextMeshProUGUI Levels7;
     public  TextMeshProUGUI Levels8;
     public  TextMeshProUGUI Levels9;
-
-    public GameObject Ball;
-    public GameObject winTitle;
-
+    
     public string nextLevel;
 
     //Public customisable ints of the level and par

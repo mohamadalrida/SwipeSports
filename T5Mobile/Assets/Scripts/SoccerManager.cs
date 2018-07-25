@@ -5,7 +5,8 @@ using TMPro;
 
 public class SoccerManager : MonoBehaviour {
 
-    public static int hitsNumber;
+    public static int enemyGoals;
+    public static int yourGoals;
 
     public TextMeshProUGUI hits;
     public TextMeshProUGUI par;
@@ -17,8 +18,8 @@ public class SoccerManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        hitsNumber = 0;
-        hits.text = "" + hitsNumber;
+        enemyGoals = 0;
+        hits.text = "" + enemyGoals;
         par.text = "" + parNumber;
         hole.text = "" + holeNumber;
 	}
@@ -26,6 +27,7 @@ public class SoccerManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        hits.text = "" + hitsNumber;
+        hits.text = "" + enemyGoals;
+        par.text = "" + (parNumber + yourGoals);
 	}
 }
