@@ -24,8 +24,11 @@ public class DragThrow : MonoBehaviour
     public AudioClip ballHit;
     public AudioClip ballBounce;
     public AudioClip bouncy;
+    public AudioClip whistle;
     private AudioSource audioSource;
     private AudioSource audioSourceBounce;
+
+    public float whistleVolume;
 
     public TextMeshProUGUI readyText;
     public TextMeshProUGUI waitText;
@@ -113,6 +116,8 @@ public class DragThrow : MonoBehaviour
         {
             Debug.Log("hit Reset Zone");
             transform.position = previousSpot;
+
+            audioSource.PlayOneShot(whistle, whistleVolume);
 
             rb.velocity = new Vector2(0, 0);                                                  // Freeze the ball
             rb.gravityScale = 0.0f;
