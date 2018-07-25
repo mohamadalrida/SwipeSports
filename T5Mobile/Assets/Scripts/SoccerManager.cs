@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class StrokeManager : MonoBehaviour {
+public class SoccerManager : MonoBehaviour {
 
-    public static int strokesNumber;
-    
-    public TextMeshProUGUI strokes;
+    public static int hitsNumber;
+
+    public TextMeshProUGUI hits;
     public TextMeshProUGUI par;
     public TextMeshProUGUI hole;
 
@@ -17,15 +17,15 @@ public class StrokeManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        strokesNumber = 0;
-        strokes.text = "" + strokesNumber;
+        hitsNumber = 0;
+        hits.text = "" + hitsNumber;
         par.text = "" + parNumber;
         hole.text = "" + holeNumber;
-    }
+	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        strokes.text = "" + strokesNumber;
+        hits.text = "" + hitsNumber;
 	}
 }
