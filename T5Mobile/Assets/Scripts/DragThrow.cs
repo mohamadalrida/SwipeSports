@@ -115,7 +115,7 @@ public class DragThrow : MonoBehaviour
         if( collision.gameObject.tag == "BallReset")
         {
             Debug.Log("hit Reset Zone");
-<<<<<<< HEAD
+
             transform.position = previousSpot;
 
             audioSource.PlayOneShot(whistle, whistleVolume);
@@ -123,9 +123,8 @@ public class DragThrow : MonoBehaviour
             rb.velocity = new Vector2(0, 0);                                                  // Freeze the ball
             rb.gravityScale = 0.0f;
             rb.freezeRotation = true;
-=======
+
             player.transform.position = previousSpot;
->>>>>>> parent of a52fb6f... script reset
         }
     }
 
