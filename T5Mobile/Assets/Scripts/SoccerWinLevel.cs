@@ -83,7 +83,7 @@ public class SoccerWinLevel : MonoBehaviour {
     {
         levelNo.text = "Completed Game " + levelNumber;
         strokeNo.text = "in " + SoccerManager.enemyGoals + " hits.";
-        parNo.text = "The final score was: " + SoccerManager.yourGoals + " - " + SoccerManager.enemyGoals;
+        parNo.text = "The final score was: " + (parNumber + SoccerManager.yourGoals) + " - " + SoccerManager.enemyGoals;
 
         StartCoroutine(PlayEndAnimation());
     }
@@ -103,6 +103,9 @@ public class SoccerWinLevel : MonoBehaviour {
             YourGoals1 = parNumber + SoccerManager.yourGoals;
             goalsFor1.text = "" + YourGoals1;
 
+            GoalsFor += YourGoals1;
+            GoalsAgainst += SoccerManager.enemyGoals;
+
             if (YourGoals1 > EnemyGoals1)
             {
                 LeagueScore += 3;
@@ -116,5 +119,7 @@ public class SoccerWinLevel : MonoBehaviour {
                 LeagueScore += 0;
             }
         }
+
+
     }
 }

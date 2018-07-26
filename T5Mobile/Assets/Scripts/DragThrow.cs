@@ -34,7 +34,6 @@ public class DragThrow : MonoBehaviour
     public TextMeshProUGUI waitText;
 
     // resetting player position
-    public GameObject player;
     private Vector2 previousSpot;
 
 
@@ -79,14 +78,14 @@ public class DragThrow : MonoBehaviour
             audioSource.Play();
 
             StrokeManager.strokesNumber++;
-            SoccerManager.yourGoals++;
+            SoccerManager.enemyGoals++;
 
             throwAllowed = false;
         }
 
         if (throwAllowed == true)
         {
-            previousSpot = player.transform.position;
+            previousSpot = transform.position;
 
             readyText.enabled = true;
             waitText.enabled = false;
@@ -124,7 +123,7 @@ public class DragThrow : MonoBehaviour
             rb.gravityScale = 0.0f;
             rb.freezeRotation = true;
 
-            player.transform.position = previousSpot;
+            transform.position = previousSpot;
         }
     }
 
