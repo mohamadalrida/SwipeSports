@@ -444,7 +444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1783272563514610, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 223268606202356752, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
         type: 2}
@@ -550,6 +550,34 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: 282.50003
+      objectReference: {fileID: 0}
+    - target: {fileID: 1087993969832388, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
+      propertyPath: m_Name
+      value: GF
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660182892574770, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
+      propertyPath: m_Name
+      value: GA
+      objectReference: {fileID: 0}
+    - target: {fileID: 1084105000605986, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
+      propertyPath: m_Name
+      value: Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 1418542520086096, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
+      propertyPath: m_Name
+      value: TeamName
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958999619453846, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
+      propertyPath: m_Name
+      value: GF Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 1962964255437696, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
+      propertyPath: m_Name
+      value: GA Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 1876364733745848, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
+      propertyPath: m_Name
+      value: Score Number
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
@@ -4480,7 +4508,7 @@ MonoBehaviour:
   goalsFor7: {fileID: 0}
   goalsFor8: {fileID: 0}
   goalsFor9: {fileID: 0}
-  goalsAgainst1: {fileID: 0}
+  goalsAgainst1: {fileID: 1415934886}
   goalsAgainst2: {fileID: 0}
   goalsAgainst3: {fileID: 0}
   goalsAgainst4: {fileID: 0}
@@ -4496,6 +4524,9 @@ MonoBehaviour:
   strokeNo: {fileID: 136715578}
   parNo: {fileID: 172626175}
   endLevel: {fileID: 59864937}
+  goalsAgainst: {fileID: 1415934886}
+  goalsFor: {fileID: 433229177}
+  leagueScore: {fileID: 1374453531}
 --- !u!1 &1144672013
 GameObject:
   m_ObjectHideFlags: 0
@@ -5349,6 +5380,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!114 &1374453531 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114848085597584908, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 3846344}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
 --- !u!1 &1374907890
 GameObject:
   m_ObjectHideFlags: 0
@@ -5671,6 +5708,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1415934886 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114629622290408134, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
+    type: 2}
+  m_PrefabInternal: {fileID: 3846344}
+  m_Script: {fileID: 1453722849, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
 --- !u!1 &1427688445
 GameObject:
   m_ObjectHideFlags: 0
