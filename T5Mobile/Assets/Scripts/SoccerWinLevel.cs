@@ -61,6 +61,13 @@ public class SoccerWinLevel : MonoBehaviour {
 
     public Animator endLevel;
 
+    private int enemyGoals;
+    private int yourGoals;
+
+    public TextMeshProUGUI goalsAgainst;
+    public TextMeshProUGUI goalsFor;
+    public TextMeshProUGUI leagueScore;
+
     private void Start()
     {
         
@@ -97,29 +104,57 @@ public class SoccerWinLevel : MonoBehaviour {
 
     public void AddToTable()
     {
-        if (levelNumber == 1)
+        //if (levelNumber == 1)
+        //{
+        //    EnemyGoals1 = SoccerManager.enemyGoals;
+        //    YourGoals1 = parNumber + SoccerManager.yourGoals;
+            
+        //    GoalsFor += YourGoals1;
+        //    GoalsAgainst += SoccerManager.enemyGoals;
+
+        //    goalsFor1.text = "" + YourGoals1;
+        //    goalsAgainst1.text = "" + EnemyGoals1;
+            
+        //    if (YourGoals1 > EnemyGoals1)
+        //    {
+        //        LeagueScore += 3;
+                
+        //    }
+        //    else if (YourGoals1 == EnemyGoals1)
+        //    {
+        //        LeagueScore += 1;
+        //    }
+        //    else if (YourGoals1 < EnemyGoals1)
+        //    {
+        //        LeagueScore += 0;
+        //    }
+
+        //}
+
+        enemyGoals = SoccerManager.enemyGoals;
+        yourGoals = parNumber + SoccerManager.yourGoals;
+
+        GoalsFor += yourGoals;
+        GoalsAgainst += enemyGoals;
+
+        goalsFor.text = "" + yourGoals;
+        goalsAgainst.text = "" + enemyGoals;
+        leagueScore.text = "" + LeagueScore;
+
+        if (yourGoals > enemyGoals)
         {
-            EnemyGoals1 = SoccerManager.enemyGoals;
-            YourGoals1 = parNumber + SoccerManager.yourGoals;
-            goalsFor1.text = "" + YourGoals1;
-
-            GoalsFor += YourGoals1;
-            GoalsAgainst += SoccerManager.enemyGoals;
-
-            if (YourGoals1 > EnemyGoals1)
-            {
-                LeagueScore += 3;
-            }
-            else if (YourGoals1 == EnemyGoals1)
-            {
-                LeagueScore += 1;
-            }
-            else if (YourGoals1 < EnemyGoals1)
-            {
-                LeagueScore += 0;
-            }
+            LeagueScore += 3;
+            leagueScore.text = "" + LeagueScore;
         }
-
-
+        else if (yourGoals == enemyGoals)
+        {
+            LeagueScore += 1;
+            leagueScore.text = "" + LeagueScore;
+        }
+        else if (yourGoals < enemyGoals)
+        {
+            LeagueScore += 0;
+            leagueScore.text = "" + LeagueScore;
+        }
     }
 }
