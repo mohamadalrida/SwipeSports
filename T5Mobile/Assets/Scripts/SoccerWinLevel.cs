@@ -38,10 +38,13 @@ public class SoccerWinLevel : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D Ball)
     {
-        gameObject.GetComponent<BoxCollider2D>().enabled = false;       //turn off collider
-        SoccerManager.yourGoals++;                                      //adds 1 goal to your score and starts 2 functions
-        StartCoroutine(FinishLevel());
-        AddToTable();
+        if (Ball.tag == "Player")
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;       //turn off collider
+            SoccerManager.yourGoals++;                                      //adds 1 goal to your score and starts 2 functions
+            StartCoroutine(FinishLevel());
+            AddToTable();
+        }
     }
 
     IEnumerator FinishLevel()
