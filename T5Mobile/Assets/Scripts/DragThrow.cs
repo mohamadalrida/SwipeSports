@@ -25,6 +25,8 @@ public class DragThrow : MonoBehaviour
     public AudioClip ballBounce;
     public AudioClip bouncy;
     public AudioClip whistle;
+    public AudioClip soccerWin;
+    public AudioClip soccerHit;
     private AudioSource audioSource;
     private AudioSource audioSourceBounce;
 
@@ -35,6 +37,11 @@ public class DragThrow : MonoBehaviour
 
     // resetting player position
     private Vector2 previousSpot;
+
+
+    // Level Setting
+    public bool golfLevel = true;
+    public bool soccerLevel;
 
 
     // Use this for initialization
@@ -74,8 +81,16 @@ public class DragThrow : MonoBehaviour
             rb.AddForce(-direction / timeInterval * throwForce);
 
             // Play Audio Here of ball hit
+            if(golfLevel == true)
+            {
+                audioSource.Play();
+            }
 
-            audioSource.Play();
+            if ( soccerLevel == true)
+            {
+                audioSource.PlayOneShot(soccerHit);
+            }
+            
 
             StrokeManager.strokesNumber++;
             SoccerManager.enemyGoals++;
@@ -124,6 +139,11 @@ public class DragThrow : MonoBehaviour
             rb.freezeRotation = true;
 
             transform.position = previousSpot;
+        }
+
+        if (collision.gameObject.tag == "SoccerWin")
+        {
+            audioSource.PlayOneShot(soccerWin);
         }
     }
 
