@@ -11,6 +11,17 @@ public class EquipMenu : MonoBehaviour {
     public Button btn4;
     public Button btn5;
     public Button btn6;
+    public Button btnAD;
+    public Button btnRegular;
+
+    private string Yellow = "Yellow";
+    private string Green = "Green";
+    private string Blue = "Blue";
+    private string Sky = "Sky";
+    private string Pink = "Pink";
+    private string Red = "Red";
+    private string AD = "AD";
+    private string Regular = "Regular";
 
     private void Start()
     {
@@ -20,74 +31,65 @@ public class EquipMenu : MonoBehaviour {
         Shop.Purchased4 = PlayerPrefs.GetInt("Purchased4", Shop.Purchased4);
         Shop.Purchased5 = PlayerPrefs.GetInt("Purchased5", Shop.Purchased5);
         Shop.Purchased6 = PlayerPrefs.GetInt("Purchased6", Shop.Purchased6);
+        Shop.PurchasedAD = PlayerPrefs.GetInt("PurchasedAD", Shop.PurchasedAD);
 
         Debug.Log("" + Shop.Purchased1);
+    }
 
+    private void Update()
+    {
         if (Shop.Purchased1 == 1)
         {
-            btn1.enabled = true;
+            btn1.interactable = true;
         }
-        else
-        {
-            btn1.enabled = false;
-        }
+        
 
         if (Shop.Purchased2 == 1)
         {
-            btn2.enabled = true;
+            btn2.interactable = true;
         }
-        else
-        {
-            btn2.enabled = false;
-        }
+        
 
         if (Shop.Purchased3 == 1)
         {
-            btn3.enabled = true;
+            btn3.interactable = true;
         }
-        else
-        {
-            btn3.enabled = false;
-        }
+        
 
         if (Shop.Purchased4 == 1)
         {
-            btn4.enabled = true;
+            btn4.interactable = true;
         }
-        else
-        {
-            btn4.enabled = false;
-        }
+        
 
         if (Shop.Purchased5 == 1)
         {
-            btn5.enabled = true;
+            btn5.interactable = true;
         }
-        else
-        {
-            btn5.enabled = false;
-        }
+        
 
         if (Shop.Purchased6 == 1)
         {
-            btn6.enabled = true;
+            btn6.interactable = true;
         }
-        else
+
+        if (Shop.PurchasedAD == 1)
         {
-            btn6.enabled = false;
+            btnAD.interactable = true;
         }
+        
     }
 
     public void EquipYellow()
     {
         if (Shop.Purchased1 == 1)
         {
-            PlayerPrefs.SetString("Equip", "Yellow");
+            PlayerPrefs.SetString("Equip", Yellow);
             Debug.Log("equipped yellow");
         }
         else
         {
-            btn1.enabled = false;
+            btn1.interactable = false;
         }
     }
 
@@ -95,59 +97,78 @@ public class EquipMenu : MonoBehaviour {
     {
         if (Shop.Purchased2 == 1)
         {
-            PlayerPrefs.SetString("Equip", "Green");        
+            PlayerPrefs.SetString("Equip", Green);        
         }
         else
         {
-            btn2.enabled = false;
+            btn2.interactable = false;
         }
     }
 
     public void EquipBlue()
     {
-        if (Shop.Purchased1 == 1)
+        if (Shop.Purchased3 == 1)
         { 
-            PlayerPrefs.SetString("Equip", "Blue");
+            PlayerPrefs.SetString("Equip", Blue);
         }
         else
         {
-            btn3.enabled = false;
+            btn3.interactable = false;
         }
     }
 
     public void EquipSky()
     {
-        if (Shop.Purchased1 == 1)
+        if (Shop.Purchased4 == 1)
         {
-            PlayerPrefs.SetString("Equip", "Sky");
+            PlayerPrefs.SetString("Equip", Sky);
         }
         else
         {
-            btn4.enabled = false;
+            btn4.interactable = false;
         }
     }
 
     public void EquipPink()
     {
-        if (Shop.Purchased1 == 1)
+        if (Shop.Purchased5 == 1)
         {
-            PlayerPrefs.SetString("Equip", "Pink");
+            PlayerPrefs.SetString("Equip", Pink);
         }
         else
         {
-            btn5.enabled = false;
+            btn5.interactable = false;
         }
     }
 
     public void EquipRed()
     {
-        if (Shop.Purchased1 == 1)
+        if (Shop.Purchased6 == 1)
         {
-            PlayerPrefs.SetString("Equip", "Red");
+            PlayerPrefs.SetString("Equip", Red);
         }
         else
         {
-            btn6.enabled = false;
+            btn6.interactable = false;
         }
     }
+
+    public void EquipAD()
+    {
+        if (Shop.PurchasedAD == 1)
+        {
+            PlayerPrefs.SetString("Equip", AD);
+        }
+        else
+        {
+            btn6.interactable = false;
+        }
+    }
+
+    public void EquipRegular()
+    {
+        PlayerPrefs.SetString("Equip", Regular);
+    }
+
+
 }

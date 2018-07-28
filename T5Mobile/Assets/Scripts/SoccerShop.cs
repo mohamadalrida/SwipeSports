@@ -170,8 +170,10 @@ public class SoccerShop : MonoBehaviour {
         if (ADMoney.AdMoney >= CostAD)
         {
             Debug.Log("purchasing");
+            
             ADMoney.AdMoney -= CostAD;
             PlayerPrefs.SetInt("AdMoney", ADMoney.AdMoney);
+
             Debug.Log("purchased");
 
             SPurchasedAD = 1;

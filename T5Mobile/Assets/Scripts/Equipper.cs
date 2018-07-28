@@ -12,6 +12,7 @@ public class Equipper : MonoBehaviour {
     public GameObject Sky;
     public GameObject Pink;
     public GameObject Red;
+    public GameObject AD;
 
     // Use this for initialization
     void Start () { 
@@ -35,6 +36,7 @@ public class Equipper : MonoBehaviour {
             Sky.SetActive(false);
             Pink.SetActive(false);
             Red.SetActive(false);
+            AD.SetActive(false);
         }
 
         if (Equip == "Green")
@@ -46,17 +48,19 @@ public class Equipper : MonoBehaviour {
             Sky.SetActive(false);
             Pink.SetActive(false);
             Red.SetActive(false);
+            AD.SetActive(false);
         }
 
         if (Equip == "Blue")
         {
             Blue.SetActive(true);
-
+            Debug.Log("blue");
             Yellow.SetActive(false);
             Green.SetActive(false);
             Sky.SetActive(false);
             Pink.SetActive(false);
             Red.SetActive(false);
+            AD.SetActive(false);
         }
 
         if (Equip == "Sky")
@@ -68,6 +72,7 @@ public class Equipper : MonoBehaviour {
             Blue.SetActive(false);
             Pink.SetActive(false);
             Red.SetActive(false);
+            AD.SetActive(false);
         }
 
         if (Equip == "Pink")
@@ -79,6 +84,7 @@ public class Equipper : MonoBehaviour {
             Blue.SetActive(false);
             Sky.SetActive(false);
             Red.SetActive(false);
+            AD.SetActive(false);
         }
 
         if (Equip == "Red")
@@ -90,6 +96,30 @@ public class Equipper : MonoBehaviour {
             Blue.SetActive(false);
             Sky.SetActive(false);
             Pink.SetActive(false);
+            AD.SetActive(false);
+        }
+
+        if (Equip == "AD")
+        {
+            AD.SetActive(true);
+
+            Yellow.SetActive(false);
+            Green.SetActive(false);
+            Blue.SetActive(false);
+            Sky.SetActive(false);
+            Pink.SetActive(false);
+            Red.SetActive(false);
+        }
+
+        if (Equip == "Regular")
+        {
+            Yellow.SetActive(false);
+            Green.SetActive(false);
+            Blue.SetActive(false);
+            Sky.SetActive(false);
+            Pink.SetActive(false);
+            Red.SetActive(false);
+            AD.SetActive(false);
         }
 
     }
