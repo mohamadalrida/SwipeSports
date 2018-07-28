@@ -26,7 +26,10 @@ public class Shop : MonoBehaviour {
     public static int Purchased5;
     public static int Purchased6;
 
-
+    public GameObject nextShopSB;
+    public GameObject nextShopGB;
+    public GameObject shopGB;
+    public GameObject shopSB;
 
     private void Update()
     {
@@ -70,6 +73,22 @@ public class Shop : MonoBehaviour {
             btn6.interactable = false;
         }
 
+    }
+
+    public void NextShopSB()
+    {
+        nextShopSB.SetActive(true);
+        nextShopGB.SetActive(false);
+        shopGB.SetActive(false);
+        shopSB.SetActive(true);
+    }
+
+    public void NextShopGB()
+    {
+        nextShopSB.SetActive(false);
+        nextShopGB.SetActive(true);
+        shopGB.SetActive(true);
+        shopSB.SetActive(false);
     }
 
     public void Purchase1()

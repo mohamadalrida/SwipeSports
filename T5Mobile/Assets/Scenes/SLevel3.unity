@@ -5096,6 +5096,22 @@ Prefab:
       propertyPath: holeNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4988990653235658, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -657.486
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988990653235658, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -511.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988990653235658, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.7288213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4988990653235658, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 6.5930796
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
   m_IsPrefabParent: 0
