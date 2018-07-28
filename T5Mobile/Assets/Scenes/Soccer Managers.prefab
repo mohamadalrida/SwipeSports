@@ -52,8 +52,8 @@ GameObject:
   - component: {fileID: 4988990653235658}
   - component: {fileID: 212082075546172730}
   - component: {fileID: 61948986010121686}
-  - component: {fileID: 114260525550379898}
   - component: {fileID: 82669837102970122}
+  - component: {fileID: 114272738948123080}
   m_Layer: 0
   m_Name: EndScreenManager
   m_TagString: Untagged
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4201854643051080}
-  - component: {fileID: 114187927169099748}
+  - component: {fileID: 114368893120371192}
   m_Layer: 0
   m_Name: StrokeManager
   m_TagString: Untagged
@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545592199802264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -656.43, y: -513.3, z: -12}
+  m_LocalPosition: {x: -669.84, y: -511.61, z: -12}
   m_LocalScale: {x: 0.66814345, y: 2.6152444, z: 1}
   m_Children: []
   m_Father: {fileID: 4362445091774668}
@@ -268,23 +268,7 @@ MonoBehaviour:
   holeFinishCanvas: {fileID: 0}
   optionsMenu: {fileID: 0}
   mainMenuConfirmation: {fileID: 0}
---- !u!114 &114187927169099748
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1596679609327268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d5e6a784eef9a84baa1a6101503b0ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  strokes: {fileID: 0}
-  par: {fileID: 0}
-  hole: {fileID: 0}
-  parNumber: 3
-  holeNumber: 1
---- !u!114 &114260525550379898
+--- !u!114 &114272738948123080
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -292,27 +276,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 1545592199802264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e77281d03c074a40b103f62ebf94838, type: 3}
+  m_Script: {fileID: 11500000, guid: eed3c7a9d98d52a4bab16ee4e7942043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Levels1: {fileID: 0}
-  Levels2: {fileID: 0}
-  Levels3: {fileID: 0}
-  Levels4: {fileID: 0}
-  Levels5: {fileID: 0}
-  Levels6: {fileID: 0}
-  Levels7: {fileID: 0}
-  Levels8: {fileID: 0}
-  Levels9: {fileID: 0}
-  nextLevel: Level 8
-  levelNumber: 7
+  goalsFor1: {fileID: 0}
+  goalsFor2: {fileID: 0}
+  goalsFor3: {fileID: 0}
+  goalsFor4: {fileID: 0}
+  goalsFor5: {fileID: 0}
+  goalsFor6: {fileID: 0}
+  goalsFor7: {fileID: 0}
+  goalsFor8: {fileID: 0}
+  goalsFor9: {fileID: 0}
+  goalsAgainst1: {fileID: 0}
+  goalsAgainst2: {fileID: 0}
+  goalsAgainst3: {fileID: 0}
+  goalsAgainst4: {fileID: 0}
+  goalsAgainst5: {fileID: 0}
+  goalsAgainst6: {fileID: 0}
+  goalsAgainst7: {fileID: 0}
+  goalsAgainst8: {fileID: 0}
+  goalsAgainst9: {fileID: 0}
+  levelNumber: 1
   parNumber: 3
-  holeFinishCanvas: {fileID: 0}
+  soccerFinishCanvas: {fileID: 0}
   levelNo: {fileID: 0}
   strokeNo: {fileID: 0}
   parNo: {fileID: 0}
-  clap: {fileID: 0}
   endLevel: {fileID: 0}
+  goalsAgainst: {fileID: 0}
+  goalsFor: {fileID: 0}
+  leagueScore: {fileID: 0}
+  nextLevel: 
+--- !u!114 &114368893120371192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1596679609327268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7ad5506c6f3be4681b07075fc91e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hits: {fileID: 0}
+  par: {fileID: 0}
+  hole: {fileID: 0}
+  parNumber: 3
+  holeNumber: 1
 --- !u!212 &212082075546172730
 SpriteRenderer:
   m_ObjectHideFlags: 1

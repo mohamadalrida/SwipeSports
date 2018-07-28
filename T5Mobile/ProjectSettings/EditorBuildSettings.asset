@@ -56,4 +56,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu Scenes/Character.unity
     guid: b7ad79173c0a79140884151673285cc2
+  - enabled: 1
+    path: Assets/Scenes/SLevel0.unity
+    guid: e3315ec00b4ae9244be54be1bb721cfd
+  - enabled: 1
+    path: Assets/Scenes/SLevel1.unity
+    guid: bedadf9da008fbd459937efee201909a
+  - enabled: 1
+    path: Assets/Scenes/SLevel2.unity
+    guid: 93d62476a44907648970dc400b0459c7
+  - enabled: 1
+    path: Assets/Scenes/SLevel3.unity
+    guid: bdfd7ef8a3194f44981cbf6a4dff07e1
+  - enabled: 1
+    path: Assets/Scenes/SLevel4.unity
+    guid: 39d829957ab516d45b8a5e1363663717
+  - enabled: 1
+    path: Assets/Scenes/SLevel5.unity
+    guid: 3f08fbc810d076e49b1a30b82526a0ff
+  - enabled: 1
+    path: Assets/Scenes/SLevel6.unity
+    guid: 76bf15f13c57c6e4eb70743b519c4682
+  - enabled: 1
+    path: Assets/Scenes/SLevel7.unity
+    guid: 07988526aaf7d424ba9295c4cc785497
+  - enabled: 1
+    path: Assets/Scenes/SLevel8.unity
+    guid: 21b1f4e53e7da4340b2a75bf15e07d15
+  - enabled: 1
+    path: Assets/Scenes/SLevel9.unity
+    guid: d0a7488056022074d8ab79497cbe7542
   m_configObjects: {}

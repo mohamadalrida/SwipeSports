@@ -18,6 +18,7 @@ public class SoccerManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+        yourGoals = 0;
         enemyGoals = 0;
         hits.text = "" + enemyGoals;
         par.text = "" + parNumber;

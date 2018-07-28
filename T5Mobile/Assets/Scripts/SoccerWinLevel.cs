@@ -6,89 +6,52 @@ using TMPro;
 
 public class SoccerWinLevel : MonoBehaviour {
 
-    public static int EnemyGoals1;
-    public static int EnemyGoals2;
-    public static int EnemyGoals3;
-    public static int EnemyGoals4;
-    public static int EnemyGoals5;
-    public static int EnemyGoals6;
-    public static int EnemyGoals7;
-    public static int EnemyGoals8;
-    public static int EnemyGoals9;
-   
-    public static int LeagueScore;
+    public static int LeagueScore;                                      //Static ints
     public static int GoalsFor;
     public static int GoalsAgainst;
 
-    public static int YourGoals1;
-    public static int YourGoals2;
-    public static int YourGoals3;
-    public static int YourGoals4;
-    public static int YourGoals5;
-    public static int YourGoals6;
-    public static int YourGoals7;
-    public static int YourGoals8;
-    public static int YourGoals9;
-
-    public TextMeshProUGUI goalsFor1;
-    public TextMeshProUGUI goalsFor2;
-    public TextMeshProUGUI goalsFor3;
-    public TextMeshProUGUI goalsFor4;
-    public TextMeshProUGUI goalsFor5;
-    public TextMeshProUGUI goalsFor6;
-    public TextMeshProUGUI goalsFor7;
-    public TextMeshProUGUI goalsFor8;
-    public TextMeshProUGUI goalsFor9;
-
-    public TextMeshProUGUI goalsAgainst1;
-    public TextMeshProUGUI goalsAgainst2;
-    public TextMeshProUGUI goalsAgainst3;
-    public TextMeshProUGUI goalsAgainst4;
-    public TextMeshProUGUI goalsAgainst5;
-    public TextMeshProUGUI goalsAgainst6;
-    public TextMeshProUGUI goalsAgainst7;
-    public TextMeshProUGUI goalsAgainst8;
-    public TextMeshProUGUI goalsAgainst9;
-
-    public int levelNumber;
+    public int levelNumber;                                             //Par and current level
     public int parNumber;
 
     public Canvas soccerFinishCanvas;
 
-    public TextMeshProUGUI levelNo;
+    public TextMeshProUGUI levelNo;                                     //Text for home, away, and level
     public TextMeshProUGUI strokeNo;
     public TextMeshProUGUI parNo;
 
-    public Animator endLevel;
+    public Animator endLevel;                                           //animation for ending the level
 
-    private int enemyGoals;
+    private int enemyGoals;                                             //ints for home and away goals
     private int yourGoals;
 
-    public TextMeshProUGUI goalsAgainst;
+    public TextMeshProUGUI goalsAgainst;                                //ending text 
     public TextMeshProUGUI goalsFor;
     public TextMeshProUGUI leagueScore;
 
+    public string nextLevel;                                            //next level string
+
     private void Start()
     {
-        
+        enemyGoals = 0;                                                 //refreshes enemyGoals and yourGoals to 0, just to be safe
+        yourGoals = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D Ball)
     {
-        SoccerManager.yourGoals++;
+        SoccerManager.yourGoals++;                                      //adds 1 goal to your score and starts 2 functions
         StartCoroutine(FinishLevel());
         AddToTable();
     }
 
     IEnumerator FinishLevel()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(2);                             //wait 2 seconds to let music play
         EndGame();
     }
 
     public void EndGame()
-    {
-        levelNo.text = "Completed Game " + levelNumber;
+    {                                                       
+        levelNo.text = "Completed Game " + levelNumber;                 //initialise text on the right to show info about the round
         strokeNo.text = "in " + SoccerManager.enemyGoals + " hits.";
         parNo.text = "The final score was: " + (parNumber + SoccerManager.yourGoals) + " - " + SoccerManager.enemyGoals;
 
@@ -97,7 +60,7 @@ public class SoccerWinLevel : MonoBehaviour {
 
     IEnumerator PlayEndAnimation()
     {
-        endLevel.SetTrigger("end");
+        endLevel.SetTrigger("end");                                     //play animation then turns on the end screen plan
         yield return new WaitForSeconds(1.5f);
         soccerFinishCanvas.enabled = true;
     }
@@ -131,17 +94,22 @@ public class SoccerWinLevel : MonoBehaviour {
 
         //}
 
-        enemyGoals = SoccerManager.enemyGoals;
+        enemyGoals = SoccerManager.enemyGoals;                      //initialise enemyGoals and yourGoals
         yourGoals = parNumber + SoccerManager.yourGoals;
 
+        PlayerPrefs.GetInt("GoalsFor", GoalsFor);                   //add goals for and against to scoreboard
+        PlayerPrefs.GetInt("GoalsAgainst", GoalsAgainst);
         GoalsFor += yourGoals;
         GoalsAgainst += enemyGoals;
+        PlayerPrefs.SetInt("GoalsFor", GoalsFor);
+        PlayerPrefs.SetInt("GoalsAgainst", GoalsAgainst);
 
-        goalsFor.text = "" + yourGoals;
-        goalsAgainst.text = "" + enemyGoals;
+
+        goalsFor.text = "" + GoalsFor;                             //initialise text on the leaderboard to show goals for, against and league score
+        goalsAgainst.text = "" + GoalsAgainst;
         leagueScore.text = "" + LeagueScore;
 
-        if (yourGoals > enemyGoals)
+        if (yourGoals > enemyGoals)                                 //checks to see if you won, drew or lost and gives points respectivley for it
         {
             LeagueScore += 3;
             leagueScore.text = "" + LeagueScore;
@@ -156,5 +124,10 @@ public class SoccerWinLevel : MonoBehaviour {
             LeagueScore += 0;
             leagueScore.text = "" + LeagueScore;
         }
+    }
+
+    public void Continue()                                          //load next level
+    {
+        SceneManager.LoadScene(nextLevel);
     }
 }

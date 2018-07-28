@@ -579,6 +579,16 @@ Prefab:
       propertyPath: m_Name
       value: Score Number
       objectReference: {fileID: 0}
+    - target: {fileID: 114140984522228452, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1139709407}
+    - target: {fileID: 114140984522228452, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Continue
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
   m_IsPrefabParent: 0
@@ -4527,6 +4537,7 @@ MonoBehaviour:
   goalsAgainst: {fileID: 1415934886}
   goalsFor: {fileID: 433229177}
   leagueScore: {fileID: 1374453531}
+  nextLevel: SLevel1
 --- !u!1 &1144672013
 GameObject:
   m_ObjectHideFlags: 0
@@ -4824,6 +4835,7 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 114260525550379898, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
     - {fileID: 114187927169099748, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
+    - {fileID: 114272738948123080, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7d373bfbd8cb7794b92ffea440b4ebf7, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1222171534
