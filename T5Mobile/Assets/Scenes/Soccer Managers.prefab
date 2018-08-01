@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 212082075546172730}
   - component: {fileID: 61948986010121686}
   - component: {fileID: 82669837102970122}
-  - component: {fileID: 114272738948123080}
+  - component: {fileID: 114837352520631066}
   m_Layer: 0
   m_Name: EndScreenManager
   m_TagString: Untagged
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4201854643051080}
-  - component: {fileID: 114368893120371192}
+  - component: {fileID: 114571952227683904}
   m_Layer: 0
   m_Name: StrokeManager
   m_TagString: Untagged
@@ -268,47 +268,7 @@ MonoBehaviour:
   holeFinishCanvas: {fileID: 0}
   optionsMenu: {fileID: 0}
   mainMenuConfirmation: {fileID: 0}
---- !u!114 &114272738948123080
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1545592199802264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eed3c7a9d98d52a4bab16ee4e7942043, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goalsFor1: {fileID: 0}
-  goalsFor2: {fileID: 0}
-  goalsFor3: {fileID: 0}
-  goalsFor4: {fileID: 0}
-  goalsFor5: {fileID: 0}
-  goalsFor6: {fileID: 0}
-  goalsFor7: {fileID: 0}
-  goalsFor8: {fileID: 0}
-  goalsFor9: {fileID: 0}
-  goalsAgainst1: {fileID: 0}
-  goalsAgainst2: {fileID: 0}
-  goalsAgainst3: {fileID: 0}
-  goalsAgainst4: {fileID: 0}
-  goalsAgainst5: {fileID: 0}
-  goalsAgainst6: {fileID: 0}
-  goalsAgainst7: {fileID: 0}
-  goalsAgainst8: {fileID: 0}
-  goalsAgainst9: {fileID: 0}
-  levelNumber: 1
-  parNumber: 3
-  soccerFinishCanvas: {fileID: 0}
-  levelNo: {fileID: 0}
-  strokeNo: {fileID: 0}
-  parNo: {fileID: 0}
-  endLevel: {fileID: 0}
-  goalsAgainst: {fileID: 0}
-  goalsFor: {fileID: 0}
-  leagueScore: {fileID: 0}
-  nextLevel: 
---- !u!114 &114368893120371192
+--- !u!114 &114571952227683904
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -324,6 +284,28 @@ MonoBehaviour:
   hole: {fileID: 0}
   parNumber: 3
   holeNumber: 1
+--- !u!114 &114837352520631066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545592199802264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed3c7a9d98d52a4bab16ee4e7942043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelNumber: 1
+  parNumber: 3
+  soccerFinishCanvas: {fileID: 0}
+  levelNo: {fileID: 0}
+  strokeNo: {fileID: 0}
+  parNo: {fileID: 0}
+  endLevel: {fileID: 0}
+  goalsAgainst: {fileID: 0}
+  goalsFor: {fileID: 0}
+  leagueScore: {fileID: 0}
+  nextLevel: SLevel1
 --- !u!212 &212082075546172730
 SpriteRenderer:
   m_ObjectHideFlags: 1
