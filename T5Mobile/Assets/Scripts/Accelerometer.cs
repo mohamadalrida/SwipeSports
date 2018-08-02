@@ -20,6 +20,6 @@ public class Accelerometer : MonoBehaviour {
     {
         transform.Translate(Input.acceleration.x, Input.acceleration.y, 0);
 
-        transform.position = new Vector3(Mathf.Clamp(Time.time, xMin, xMax), (Mathf.Clamp(Time.time, yMin, yMax)), 0);
+        //transform.position = new Vector3(Mathf.Clamp(Time.time, xMin, xMax), (Mathf.Clamp(Time.time, yMin, yMax)), 0);
     }
 }
