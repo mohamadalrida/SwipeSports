@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Bounce
   - BallReset
+  - SoccerWin
   layers:
   - Default
   - TransparentFX

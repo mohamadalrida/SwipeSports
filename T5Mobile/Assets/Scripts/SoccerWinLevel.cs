@@ -30,14 +30,23 @@ public class SoccerWinLevel : MonoBehaviour {
 
     public string nextLevel;                                            //next level string
 
+    // Audio
+    public AudioClip clap;
+    private AudioSource audioSource;
+
     private void Start()
     {
         enemyGoals = 0;                                                 //refreshes enemyGoals and yourGoals to 0, just to be safe
         yourGoals = 0;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D Ball)
     {
+        // Play Audio
+        audioSource.Play();
+
         if (Ball.tag == "Player")
         {
             gameObject.GetComponent<BoxCollider2D>().enabled = false;       //turn off collider

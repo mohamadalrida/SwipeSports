@@ -54,9 +54,10 @@ GameObject:
   - component: {fileID: 61948986010121686}
   - component: {fileID: 82669837102970122}
   - component: {fileID: 114837352520631066}
+  - component: {fileID: 114283330249442340}
   m_Layer: 0
   m_Name: EndScreenManager
-  m_TagString: Untagged
+  m_TagString: SoccerWin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,6 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4201854643051080}
   - component: {fileID: 114571952227683904}
+  - component: {fileID: 114838622863343130}
   m_Layer: 0
   m_Name: StrokeManager
   m_TagString: Untagged
@@ -126,8 +128,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1545592199802264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -669.84, y: -511.61, z: -12}
-  m_LocalScale: {x: 0.66814345, y: 2.6152444, z: 1}
+  m_LocalPosition: {x: -657.486, y: -511.002, z: -12}
+  m_LocalScale: {x: 1.7288213, y: 6.5930796, z: 1}
   m_Children: []
   m_Father: {fileID: 4362445091774668}
   m_RootOrder: 0
@@ -166,7 +168,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b62493a4acada014993eb901983e2706, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4b281cdb31081b947abe44fcbdb96ea7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
@@ -268,6 +270,29 @@ MonoBehaviour:
   holeFinishCanvas: {fileID: 0}
   optionsMenu: {fileID: 0}
   mainMenuConfirmation: {fileID: 0}
+--- !u!114 &114283330249442340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1545592199802264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed3c7a9d98d52a4bab16ee4e7942043, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelNumber: 1
+  parNumber: 1
+  soccerFinishCanvas: {fileID: 0}
+  levelNo: {fileID: 0}
+  strokeNo: {fileID: 0}
+  parNo: {fileID: 0}
+  endLevel: {fileID: 0}
+  goalsAgainst: {fileID: 0}
+  goalsFor: {fileID: 0}
+  leagueScore: {fileID: 0}
+  nextLevel: SLevel2
+  clap: {fileID: 8300000, guid: 4b281cdb31081b947abe44fcbdb96ea7, type: 3}
 --- !u!114 &114571952227683904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,6 +331,23 @@ MonoBehaviour:
   goalsFor: {fileID: 0}
   leagueScore: {fileID: 0}
   nextLevel: SLevel1
+  clap: {fileID: 0}
+--- !u!114 &114838622863343130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1596679609327268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7ad5506c6f3be4681b07075fc91e29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hits: {fileID: 0}
+  par: {fileID: 0}
+  hole: {fileID: 0}
+  parNumber: 1
+  holeNumber: 1
 --- !u!212 &212082075546172730
 SpriteRenderer:
   m_ObjectHideFlags: 1
