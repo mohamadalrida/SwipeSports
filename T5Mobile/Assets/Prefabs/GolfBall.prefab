@@ -574,8 +574,8 @@ MonoBehaviour:
   ballBounce: {fileID: 8300000, guid: 5761ca0106cb28544acfe5d2be44c3e0, type: 3}
   bouncy: {fileID: 8300000, guid: dbfadef95052e024eacfe1076cb2247e, type: 3}
   whistle: {fileID: 8300000, guid: ffa27b2190212bd458b6c461ed9d6715, type: 3}
-  soccerWin: {fileID: 0}
-  soccerHit: {fileID: 0}
+  soccerWin: {fileID: 8300000, guid: 4b281cdb31081b947abe44fcbdb96ea7, type: 3}
+  soccerHit: {fileID: 8300000, guid: 391afb28b9577ae4bb251d788d5f100f, type: 3}
   whistleVolume: 0.1
   readyText: {fileID: 0}
   waitText: {fileID: 0}
