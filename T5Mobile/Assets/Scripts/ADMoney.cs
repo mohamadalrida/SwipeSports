@@ -18,7 +18,7 @@ public class ADMoney : MonoBehaviour {
 
     private void Update()
     {
-        adMoney.text = "AD Money: " + AdMoney;
+        adMoney.text = ": " + AdMoney;
     }
 
     public void ShowAd()
