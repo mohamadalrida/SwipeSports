@@ -2456,6 +2456,16 @@ Prefab:
       propertyPath: waitText
       value: 
       objectReference: {fileID: 537153679}
+    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: golfLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: soccerLevel
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
   m_IsPrefabParent: 0
@@ -3834,11 +3844,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4877455231362644, guid: d694597845865c749801946e0c60c36f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 4877455231362644, guid: d694597845865c749801946e0c60c36f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.018
       objectReference: {fileID: 0}
     - target: {fileID: 4877455231362644, guid: d694597845865c749801946e0c60c36f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3866,7 +3876,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4877455231362644, guid: d694597845865c749801946e0c60c36f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.9002035
+      value: 0.93631583
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877455231362644, guid: d694597845865c749801946e0c60c36f, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.9356298
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d694597845865c749801946e0c60c36f, type: 2}

@@ -23,6 +23,13 @@ public class EquipMenu : MonoBehaviour {
     private string AD = "AD";
     private string Regular = "Regular";
 
+    public GameObject nextEquipSB;
+    public GameObject nextEquipGB;
+    public GameObject equipSB;
+    public GameObject equipGB;
+    public GameObject golfBall;
+    public GameObject soccerBall;
+
     private void Start()
     {
         Shop.Purchased1 = PlayerPrefs.GetInt("Purchased1", Shop.Purchased1);
@@ -78,6 +85,26 @@ public class EquipMenu : MonoBehaviour {
             btnAD.interactable = true;
         }
         
+    }
+
+    public void NextShopSB()
+    {
+        nextEquipSB.SetActive(false);
+        nextEquipGB.SetActive(true);
+        equipGB.SetActive(false);
+        equipSB.SetActive(true);
+        soccerBall.SetActive(true);
+        golfBall.SetActive(false);
+    }
+
+    public void NextShopGB()
+    {
+        nextEquipSB.SetActive(true);
+        nextEquipGB.SetActive(false);
+        equipGB.SetActive(true);
+        equipSB.SetActive(false);
+        soccerBall.SetActive(false);
+        golfBall.SetActive(true);
     }
 
     public void EquipYellow()

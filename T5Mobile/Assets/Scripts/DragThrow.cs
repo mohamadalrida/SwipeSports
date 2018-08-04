@@ -40,8 +40,13 @@ public class DragThrow : MonoBehaviour
 
 
     // Level Setting
-    public bool golfLevel = true;
-    public bool soccerLevel;
+   
+    public  bool golfLevel = true;
+    public  bool soccerLevel;
+
+    //prefabs
+    public GameObject golfStuff;
+    public GameObject soccerStuff;
 
 
     // Use this for initialization
@@ -54,6 +59,16 @@ public class DragThrow : MonoBehaviour
 
         waitText.enabled = false;
 
+        if (soccerLevel == true)
+        {
+            golfStuff.SetActive(false);
+            soccerStuff.SetActive(true);
+        }
+        if (golfLevel == true)
+        {
+            soccerStuff.SetActive(false);
+            golfStuff.SetActive(true);
+        }
     }
 
     // Update is called once per frame

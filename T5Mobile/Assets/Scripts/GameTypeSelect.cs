@@ -25,12 +25,13 @@ public class GameTypeSelect : MonoBehaviour {
 
     public void GolfLevel()
     {
+
+        transitionAnim.SetTrigger("end");
         StartCoroutine(LoadScene());
     }
 
     IEnumerator LoadScene()
     {
-        transitionAnim.SetTrigger("end");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(GolfLevels);
     }
@@ -42,6 +43,13 @@ public class GameTypeSelect : MonoBehaviour {
 
     public void Soccer()
     {
+        StartCoroutine(LoadSScene());
+
+    }
+
+    IEnumerator LoadSScene()
+    {
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(SoccerLevels);
     }
 

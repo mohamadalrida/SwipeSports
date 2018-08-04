@@ -86,7 +86,7 @@ public class SoccerShop : MonoBehaviour {
             PlayerPrefs.SetInt("Coins", CoinManager.Coins);
 
             SPurchased1 = 1;
-            PlayerPrefs.SetInt("Purchased1", SPurchased1);
+            PlayerPrefs.SetInt("SPurchased1", SPurchased1);
 
 
         }
@@ -104,7 +104,7 @@ public class SoccerShop : MonoBehaviour {
             Debug.Log("purchased");
 
             SPurchased2 = 1;
-            PlayerPrefs.SetInt("Purchased2", SPurchased2);
+            PlayerPrefs.SetInt("SPurchased2", SPurchased2);
 
         }
     }
@@ -119,7 +119,7 @@ public class SoccerShop : MonoBehaviour {
             Debug.Log("purchased");
 
             SPurchased3 = 1;
-            PlayerPrefs.SetInt("Purchased3", SPurchased3);
+            PlayerPrefs.SetInt("SPurchased3", SPurchased3);
         }
     }
 
@@ -133,7 +133,7 @@ public class SoccerShop : MonoBehaviour {
             Debug.Log("purchased");
 
             SPurchased4 = 1;
-            PlayerPrefs.SetInt("Purchased4", SPurchased4);
+            PlayerPrefs.SetInt("SPurchased4", SPurchased4);
         }
     }
 
@@ -147,7 +147,7 @@ public class SoccerShop : MonoBehaviour {
             Debug.Log("purchased");
 
             SPurchased5 = 1;
-            PlayerPrefs.SetInt("Purchased5", SPurchased5);
+            PlayerPrefs.SetInt("SPurchased5", SPurchased5);
         }
     }
 
@@ -161,7 +161,7 @@ public class SoccerShop : MonoBehaviour {
             Debug.Log("purchased");
 
             SPurchased6 = 1;
-            PlayerPrefs.SetInt("Purchased6", SPurchased6);
+            PlayerPrefs.SetInt("SPurchased6", SPurchased6);
         }
     }
 

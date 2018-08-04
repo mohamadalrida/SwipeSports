@@ -14,11 +14,24 @@ public class Equipper : MonoBehaviour {
     public GameObject Red;
     public GameObject AD;
 
+    //public GameObject golfStuff;
+    //public GameObject soccerStuff;
+
     // Use this for initialization
     void Start () { 
 
         Equip = PlayerPrefs.GetString("Equip", Equip);
-        
+
+        //if (DragThrow.soccerLevel == true)
+        //{
+        //    golfStuff.SetActive(false);
+        //    soccerStuff.SetActive(true);
+        //}
+        //else
+        //{
+        //    soccerStuff.SetActive(false);
+        //    golfStuff.SetActive(true);
+        //}
     }
 	
 	// Update is called once per frame
@@ -29,7 +42,6 @@ public class Equipper : MonoBehaviour {
         if (Equip == "Yellow")
         {
             Yellow.SetActive(true);
-            Debug.Log("y");
 
             Green.SetActive(false);
             Blue.SetActive(false);
@@ -54,7 +66,6 @@ public class Equipper : MonoBehaviour {
         if (Equip == "Blue")
         {
             Blue.SetActive(true);
-            Debug.Log("blue");
             Yellow.SetActive(false);
             Green.SetActive(false);
             Sky.SetActive(false);

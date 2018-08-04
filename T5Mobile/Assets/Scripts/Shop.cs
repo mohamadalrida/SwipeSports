@@ -89,6 +89,7 @@ public class Shop : MonoBehaviour {
         nextShopGB.SetActive(true);
         shopGB.SetActive(false);
         shopSB.SetActive(true);
+        
     }
 
     public void NextShopGB()
@@ -97,6 +98,7 @@ public class Shop : MonoBehaviour {
         nextShopGB.SetActive(false);
         shopGB.SetActive(true);
         shopSB.SetActive(false);
+        
     }
 
     public void Purchase1()
