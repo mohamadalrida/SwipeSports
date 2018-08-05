@@ -1136,23 +1136,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1977042584421098, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022517698453474, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4022517698453474, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 212601495065640438, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
-        type: 2}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
         type: 2}
       propertyPath: readyText
@@ -1163,20 +1146,25 @@ Prefab:
       propertyPath: waitText
       value: 
       objectReference: {fileID: 56663395}
-    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
         type: 2}
-      propertyPath: golfLevel
+      propertyPath: waitAfterHit
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: ballStopSpeedpos
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
         type: 2}
-      propertyPath: soccerLevel
-      value: 0
+      propertyPath: ballStopSpeedneg
+      value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 114906802031019016, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
         type: 2}
-      propertyPath: throwForce
-      value: 0.04
+      propertyPath: timeBallStopped
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}

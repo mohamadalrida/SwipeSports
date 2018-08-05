@@ -1247,6 +1247,26 @@ Prefab:
       propertyPath: soccerLevel
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: waitAfterHit
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: ballStopSpeedpos
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: ballStopSpeedneg
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114914476157560052, guid: 929e233bbf3c85b45b4fbf0b203e8c1e,
+        type: 2}
+      propertyPath: timeBallStopped
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 929e233bbf3c85b45b4fbf0b203e8c1e, type: 2}
   m_IsPrefabParent: 0

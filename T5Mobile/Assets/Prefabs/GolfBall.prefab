@@ -345,7 +345,7 @@ Transform:
   m_GameObject: {fileID: 1977042584421098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.3347607, y: -2.86, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 14.967757}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 14.967757}
   m_Children:
   - {fileID: 4092606452284758}
   - {fileID: 4932159043317932}
@@ -1000,8 +1000,8 @@ MonoBehaviour:
   whistleVolume: 0.1
   readyText: {fileID: 0}
   waitText: {fileID: 0}
-  golfLevel: 1
-  soccerLevel: 0
+  golfLevel: 0
+  soccerLevel: 1
   golfStuff: {fileID: 1380111915795314}
   soccerStuff: {fileID: 1891340723460244}
 --- !u!114 &114914476157560052
@@ -1015,9 +1015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6783671511c3aa4da9c851a6b718b8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitAfterHit: 5
-  ballStopSpeedpos: 1.5
-  ballStopSpeedneg: -1.5
+  waitAfterHit: 2
+  ballStopSpeedpos: 1
+  ballStopSpeedneg: -1
   timeBallStopped: 0.5
 --- !u!212 &212156066797280080
 SpriteRenderer:
