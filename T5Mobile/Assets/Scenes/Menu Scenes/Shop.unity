@@ -1311,6 +1311,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adMoney: {fileID: 1078688019}
+  android: 1
+  ios: 0
 --- !u!4 &87451908
 Transform:
   m_ObjectHideFlags: 0
@@ -6091,6 +6093,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adMoney: {fileID: 1590861866}
+  android: 1
+  ios: 0
 --- !u!4 &846398442
 Transform:
   m_ObjectHideFlags: 0

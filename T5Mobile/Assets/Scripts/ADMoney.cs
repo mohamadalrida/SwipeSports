@@ -9,10 +9,24 @@ public class ADMoney : MonoBehaviour {
     public static int AdMoney;
     public TextMeshProUGUI adMoney;
 
+    public bool android;
+    public bool ios;
+
 
 	// Use this for initialization
 	void Start () {
-        Advertisement.Initialize("2685945");
+
+        if (android == true)
+        {
+            Advertisement.Initialize("2685945");
+        }
+
+        if (ios == true)
+        {
+            Advertisement.Initialize("2685944");
+        }
+        //Advertisement.Initialize("2685945");
+
         AdMoney = PlayerPrefs.GetInt("AdMoney",AdMoney);
 	}
 
