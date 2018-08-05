@@ -64,7 +64,7 @@
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="D:/Android/Android/Sdk" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.gitconfig" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/bin/github.bat" />
     <property name="ExportedModule" value="T5MobileGame" />
     <property name="ExportedApkPath" value="C:\Users\Mohamad\Desktop\Game Builds\SwipeSports.apk" />
     <property name="AndroidRunProguardForReleaseBuild" value="true" />
