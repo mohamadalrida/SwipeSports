@@ -68,7 +68,9 @@ public class EndGamePanel : MonoBehaviour {
     //Return to main menu
     public void BackToMainMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("MainMenuSwipeSports");
+        
     }
 
 

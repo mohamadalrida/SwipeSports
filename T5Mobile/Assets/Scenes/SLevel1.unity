@@ -427,6 +427,20 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1002254778431018, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114110627058047410, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114240258609247910, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bcec5ce0cd57b0446ae17bdab9039fd0, type: 2}
   m_IsPrefabParent: 0
@@ -1596,6 +1610,10 @@ Prefab:
     - target: {fileID: 1481553589905648, guid: 6e5639e7fea5e56449e635b202b41c80, type: 2}
       propertyPath: m_Name
       value: AnimationCanvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481553589905648, guid: 6e5639e7fea5e56449e635b202b41c80, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e5639e7fea5e56449e635b202b41c80, type: 2}
