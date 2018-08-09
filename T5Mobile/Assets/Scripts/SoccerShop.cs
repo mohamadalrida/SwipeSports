@@ -80,6 +80,10 @@ public class SoccerShop : MonoBehaviour {
         {
             btnAD.interactable = false;
         }
+        else
+        {
+            btnAD.interactable = true;
+        }
     }
 
     public void Purchase1()

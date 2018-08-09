@@ -52,10 +52,6 @@ public class Shop : MonoBehaviour {
         {
             btn1.interactable = false;
         }
-        //else if (CoinManager.Coins >= Cost1)
-        //{
-        ////    btn1.interactable = true;
-        //}
 
         if (CoinManager.Coins < Cost2 || Purchased2 == 1)
         {
@@ -83,6 +79,10 @@ public class Shop : MonoBehaviour {
         if(ADMoney.AdMoney < CostAD || PurchasedAD == 1)
         {
             btnAD.interactable = false;
+        }
+        else
+        {
+            btnAD.interactable = true;
         }
 
     }

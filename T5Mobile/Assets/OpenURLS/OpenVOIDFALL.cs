@@ -7,6 +7,6 @@ public class OpenVOIDFALL : MonoBehaviour {
 
 	public void OpenVF()
     {
-        Application.OpenURL("https://play.google.com/store/apps/details?id=com.BigThinkStudios.VoidFall");
+        Application.OpenURL("https://play.google.com/store/apps/details?id=com.BigThinkStudios.VoidFall1");
     }
 }
