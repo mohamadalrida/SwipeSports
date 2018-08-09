@@ -14688,8 +14688,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Thanks for watching the Ad! You've earned 1 AD coin, although you could
-    get more if you watch the full Ad.
+  m_text: Thanks for watching the Ad! You've earned 1 AD coin. We appreciate you watching
+    the Ad fully.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 65278168741c0d649a6a296ce4781b90, type: 2}
   m_sharedMaterial: {fileID: 21798173086107142, guid: 65278168741c0d649a6a296ce4781b90,
@@ -14735,7 +14735,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 94
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -14758,12 +14758,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1959697350}
-    characterCount: 106
+    characterCount: 93
     spriteCount: 0
-    spaceCount: 20
-    wordCount: 21
+    spaceCount: 16
+    wordCount: 17
     linkCount: 0
-    lineCount: 5
+    lineCount: 4
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0

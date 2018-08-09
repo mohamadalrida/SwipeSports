@@ -57,7 +57,7 @@ public class ADMoney : MonoBehaviour {
 
                 panel.SetActive(true);
                 moneyEarned.fontSize = 64;
-                moneyEarned.text = "Thanks for watching the Ad! You've earned " + x + " AD coins! Thanks for not skipping the Ad.";
+                moneyEarned.text = "Thanks for watching the Ad! You've earned " + x + " AD coins! We appreciate you watching the Ad fully.";
                 
                 break;
             case ShowResult.Skipped:
