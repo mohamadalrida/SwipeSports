@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SoccerShop : MonoBehaviour {
 
@@ -28,6 +29,9 @@ public class SoccerShop : MonoBehaviour {
     public static int SPurchased5;
     public static int SPurchased6;
     public static int SPurchasedAD;
+
+    public GameObject boughtPanel;
+    public TextMeshProUGUI boughtText;
 
     // Use this for initialization
     void Start () {
@@ -88,7 +92,9 @@ public class SoccerShop : MonoBehaviour {
             SPurchased1 = 1;
             PlayerPrefs.SetInt("SPurchased1", SPurchased1);
 
-
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(245f / 255.0f, 234f / 255.0f, 22f / 255.0f);
+            boughtText.text = "You've purchased the Yellow Soccer Ball! You can find your new item in the 'Customisation Menu.";
         }
 
     }
@@ -106,6 +112,9 @@ public class SoccerShop : MonoBehaviour {
             SPurchased2 = 1;
             PlayerPrefs.SetInt("SPurchased2", SPurchased2);
 
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(74f / 255.0f, 200f / 255.0f, 20f / 255.0f);
+            boughtText.text = "You've purchased the Green Soccer Ball! You can find your new item in the 'Customisation Menu.";
         }
     }
 
@@ -120,6 +129,10 @@ public class SoccerShop : MonoBehaviour {
 
             SPurchased3 = 1;
             PlayerPrefs.SetInt("SPurchased3", SPurchased3);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(42f / 255.0f, 99f / 255.0f, 202f / 255.0f);
+            boughtText.text = "You've purchased the Blue Soccer Ball! You can find your new item in the 'Customisation Menu.";
         }
     }
 
@@ -134,6 +147,10 @@ public class SoccerShop : MonoBehaviour {
 
             SPurchased4 = 1;
             PlayerPrefs.SetInt("SPurchased4", SPurchased4);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(43f / 255.0f, 202f / 255.0f, 202f / 255.0f);
+            boughtText.text = "You've purchased the Sky Soccer Ball! You can find your new item in the 'Customisation Menu.";
         }
     }
 
@@ -148,6 +165,10 @@ public class SoccerShop : MonoBehaviour {
 
             SPurchased5 = 1;
             PlayerPrefs.SetInt("SPurchased5", SPurchased5);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(255f / 255.0f, 0f / 255.0f, 255f / 255.0f);
+            boughtText.text = "You've purchased the Pink Soccer Ball! You can find your new item in the 'Customisation Menu.";
         }
     }
 
@@ -162,6 +183,10 @@ public class SoccerShop : MonoBehaviour {
 
             SPurchased6 = 1;
             PlayerPrefs.SetInt("SPurchased6", SPurchased6);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(255f / 255.0f, 0f / 255.0f, 0f / 255.0f);
+            boughtText.text = "You've purchased the Red Soccer Ball! You can find your new item in the 'Customisation Menu.";
         }
     }
 
@@ -178,7 +203,15 @@ public class SoccerShop : MonoBehaviour {
 
             SPurchasedAD = 1;
             PlayerPrefs.SetInt("SPurchasedAD", SPurchasedAD);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(146f / 255.0f, 69f / 255.0f, 231f / 255.0f);
+            boughtText.text = "You've purchased the special Void-Fall Soccer Ball! You can find your new item in the 'Customisation Menu.";
         }
     }
 
+    public void Continue()
+    {
+        boughtPanel.SetActive(false);
+    }
 }

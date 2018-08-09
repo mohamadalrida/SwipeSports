@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Shop : MonoBehaviour {
 
@@ -33,6 +34,9 @@ public class Shop : MonoBehaviour {
     public GameObject nextShopGB;
     public GameObject shopGB;
     public GameObject shopSB;
+
+    public GameObject boughtPanel;
+    public TextMeshProUGUI boughtText;
 
     private void Update()
     {
@@ -111,6 +115,10 @@ public class Shop : MonoBehaviour {
             Purchased1 = 1;
             PlayerPrefs.SetInt("Purchased1", Purchased1);
 
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(245f / 255.0f, 234f / 255.0f, 22f / 255.0f);
+            boughtText.text = "You've purchased the Yellow Golf Ball! You can find your new item in the 'Customisation Menu.";
+
             
         }
         
@@ -129,6 +137,11 @@ public class Shop : MonoBehaviour {
             Purchased2 = 1;
             PlayerPrefs.SetInt("Purchased2", Purchased2);
 
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(74f / 255.0f, 200f / 255.0f, 20f / 255.0f);
+            boughtText.text = "You've purchased the Green Golf Ball! You can find your new item in the 'Customisation Menu.";
+
+
         }
     }
 
@@ -143,6 +156,12 @@ public class Shop : MonoBehaviour {
 
             Purchased3= 1;
             PlayerPrefs.SetInt("Purchased3", Purchased3);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(42f / 255.0f, 99f / 255.0f, 202f / 255.0f);
+            boughtText.text = "You've purchased the Blue Golf Ball! You can find your new item in the 'Customisation Menu.";
+
+
         }
     }
 
@@ -157,6 +176,11 @@ public class Shop : MonoBehaviour {
 
             Purchased4= 1;
             PlayerPrefs.SetInt("Purchased4", Purchased4);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(43f / 255.0f, 202f / 255.0f, 202f / 255.0f);
+            boughtText.text = "You've purchased the Sky Golf Ball! You can find your new item in the 'Customisation Menu.";
+
         }
     }
 
@@ -171,6 +195,11 @@ public class Shop : MonoBehaviour {
 
             Purchased5 = 1;
             PlayerPrefs.SetInt("Purchased5", Purchased5);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(255f / 255.0f, 0f / 255.0f, 255f / 255.0f);
+            boughtText.text = "You've purchased the Pink Golf Ball! You can find your new item in the 'Customisation Menu.";
+
         }
     }
 
@@ -185,6 +214,11 @@ public class Shop : MonoBehaviour {
 
             Purchased6 = 1;
             PlayerPrefs.SetInt("Purchased6", Purchased6);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(255f / 255.0f, 0f / 255.0f, 0f / 255.0f);
+            boughtText.text = "You've purchased the Red Golf Ball! You can find your new item in the 'Customisation Menu.";
+
         }
     }
 
@@ -199,7 +233,17 @@ public class Shop : MonoBehaviour {
 
             PurchasedAD = 1;
             PlayerPrefs.SetInt("PurchasedAD", PurchasedAD);
+
+            boughtPanel.SetActive(true);
+            boughtText.color = new Color(146f / 255.0f, 69f / 255.0f, 231f / 255.0f);
+            boughtText.text = "You've purchased the special Void-Fall Golf Ball! You can find your new item in the 'Customisation Menu.";
+
         }
+    }
+
+    public void Continue()
+    {
+        boughtPanel.SetActive(false);
     }
 
 }
