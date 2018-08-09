@@ -16,7 +16,14 @@ public class MainMenuResetter : MonoBehaviour {
         WinLevel.Strokes7 = 0;
         WinLevel.Strokes8 = 0;
         WinLevel.Strokes9 = 0;
-        
+
+        PlayerPrefs.GetInt("GoalsFor", SoccerWinLevel.GoalsFor);                   
+        PlayerPrefs.GetInt("GoalsAgainst", SoccerWinLevel.GoalsAgainst);
+        SoccerWinLevel.GoalsFor = 0;
+        SoccerWinLevel.GoalsAgainst = 0;
+        PlayerPrefs.SetInt("GoalsFor", SoccerWinLevel.GoalsFor);
+        PlayerPrefs.SetInt("GoalsAgainst", SoccerWinLevel.GoalsAgainst);
+
     }
 
     // Update is called once per frame

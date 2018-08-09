@@ -43,8 +43,8 @@ public class GameTypeSelect : MonoBehaviour {
 
     public void Soccer()
     {
+        transitionAnim.SetTrigger("end");
         StartCoroutine(LoadSScene());
-
     }
 
     IEnumerator LoadSScene()
