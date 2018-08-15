@@ -50,6 +50,8 @@ public class WinLevel : MonoBehaviour
     public TextMeshProUGUI strokeNo;
     public TextMeshProUGUI parNo;
 
+    public TextMeshProUGUI finalScore;
+
     // Audio
     public AudioClip clap;
     private AudioSource audioSource;
@@ -89,6 +91,9 @@ public class WinLevel : MonoBehaviour
 
         Level9 = "" + Strokes9;
         Levels9.text = Level9;
+
+        finalScore.text = "You finished 9 holes in " + (Strokes1 + Strokes2 + Strokes3 + Strokes4 + Strokes5 + Strokes6 + Strokes7 + Strokes8 + Strokes9) + " strokes." + "\n" + "\n" + " The total par was 28.";
+        
     }
 
     private void OnTriggerEnter2D(Collider2D Ball)
@@ -184,23 +189,20 @@ public class WinLevel : MonoBehaviour
             Level9 = "" + Strokes9;
             Levels9.text = Level9;
         }
-
+        
         // Play Audio of Clapping and winning
 
         //SceneManager.LoadScene(nextLevel);
     }
 
-    //Continues to the next level
+    //Continues to the Main Menu level
     public void Continue()
     {
         holeFinishCanvas.enabled = false;
         SceneManager.LoadScene(nextLevel);
     }
 
-    //public void FinalLevel()
-    //{
-
-    //}
+    
 }
 
 

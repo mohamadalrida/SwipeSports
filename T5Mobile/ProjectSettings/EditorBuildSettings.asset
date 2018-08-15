@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 9.unity
     guid: 9dec15851ee34634db2f92b34b04190a
   - enabled: 1
+    path: Assets/Scenes/Golf Final.unity
+    guid: 649dcc5196c179e4dbcb1c1eb24827a4
+  - enabled: 1
     path: Assets/Scenes/Menu Scenes/Character.unity
     guid: b7ad79173c0a79140884151673285cc2
   - enabled: 1
@@ -86,4 +89,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SLevel9.unity
     guid: d0a7488056022074d8ab79497cbe7542
+  - enabled: 1
+    path: Assets/Scenes/Soccer Final.unity
+    guid: 0b1a6e76acb056544ae8f3b53d5d7063
   m_configObjects: {}

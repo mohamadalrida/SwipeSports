@@ -611,22 +611,22 @@ Prefab:
     - target: {fileID: 114045358009508238, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
         type: 2}
       propertyPath: m_text
-      value: Main Menu
+      value: Continue
       objectReference: {fileID: 0}
     - target: {fileID: 114045358009508238, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114045358009508238, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114045358009508238, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114045358009508238, guid: bcec5ce0cd57b0446ae17bdab9039fd0,
         type: 2}
@@ -4819,7 +4819,7 @@ MonoBehaviour:
   goalsAgainst: {fileID: 1415934886}
   goalsFor: {fileID: 433229177}
   leagueScore: {fileID: 1374453531}
-  nextLevel: MainMenuSwipeSports
+  nextLevel: Soccer Final
   clap: {fileID: 0}
 --- !u!1 &1144672013
 GameObject:

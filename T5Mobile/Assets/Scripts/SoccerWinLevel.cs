@@ -29,6 +29,7 @@ public class SoccerWinLevel : MonoBehaviour {
     public TextMeshProUGUI leagueScore;
 
     public string nextLevel;                                            //next level string
+    
 
     // Audio
     public AudioClip clap;
@@ -40,6 +41,11 @@ public class SoccerWinLevel : MonoBehaviour {
         yourGoals = 0;
 
         audioSource = GetComponent<AudioSource>();
+
+        goalsAgainst.text = "" + GoalsAgainst;
+        goalsFor.text = "" + GoalsFor;
+        leagueScore.text = "" + LeagueScore;
+        
     }
 
     private void OnTriggerEnter2D(Collider2D Ball)

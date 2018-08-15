@@ -1585,7 +1585,7 @@ Prefab:
     - target: {fileID: 114135309195628944, guid: f94972cee5efbd64c82b7d8486e25644,
         type: 2}
       propertyPath: m_text
-      value: Main Menu
+      value: Continue
       objectReference: {fileID: 0}
     - target: {fileID: 114135309195628944, guid: f94972cee5efbd64c82b7d8486e25644,
         type: 2}
@@ -1600,17 +1600,17 @@ Prefab:
     - target: {fileID: 114135309195628944, guid: f94972cee5efbd64c82b7d8486e25644,
         type: 2}
       propertyPath: m_textInfo.characterCount
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114135309195628944, guid: f94972cee5efbd64c82b7d8486e25644,
         type: 2}
       propertyPath: m_textInfo.spaceCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114135309195628944, guid: f94972cee5efbd64c82b7d8486e25644,
         type: 2}
       propertyPath: m_textInfo.wordCount
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114135309195628944, guid: f94972cee5efbd64c82b7d8486e25644,
         type: 2}
@@ -3621,7 +3621,7 @@ Prefab:
     - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
         type: 2}
       propertyPath: nextLevel
-      value: MainMenuSwipeSports
+      value: Golf Final
       objectReference: {fileID: 0}
     - target: {fileID: 114282259102236926, guid: d7776a83dc554234bb8ac7fbfbfaa18a,
         type: 2}

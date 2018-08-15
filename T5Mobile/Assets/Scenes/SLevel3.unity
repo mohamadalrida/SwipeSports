@@ -4490,17 +4490,17 @@ Prefab:
         type: 2}
       propertyPath: levelNo
       value: 
-      objectReference: {fileID: 621409377}
+      objectReference: {fileID: 2039823745}
     - target: {fileID: 114283330249442340, guid: 7d373bfbd8cb7794b92ffea440b4ebf7,
         type: 2}
       propertyPath: strokeNo
       value: 
-      objectReference: {fileID: 1862635705}
+      objectReference: {fileID: 136715578}
     - target: {fileID: 114283330249442340, guid: 7d373bfbd8cb7794b92ffea440b4ebf7,
         type: 2}
       propertyPath: parNo
       value: 
-      objectReference: {fileID: 1612828139}
+      objectReference: {fileID: 172626175}
     - target: {fileID: 114283330249442340, guid: 7d373bfbd8cb7794b92ffea440b4ebf7,
         type: 2}
       propertyPath: endLevel
