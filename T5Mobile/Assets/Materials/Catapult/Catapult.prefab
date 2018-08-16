@@ -516,8 +516,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.4042065, y: 2.2262857}
-  m_Size: {x: 0.96590656, y: 0.76013136}
+  m_Offset: {x: -2.4041889, y: 2.3616633}
+  m_Size: {x: 1.0309305, y: 1.0309306}
   m_Direction: 1
 --- !u!95 &95940453590445096
 Animator:
@@ -564,7 +564,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   theBall: {fileID: 0}
   launchTime: 0
-  timeToLaunch: 2
+  timeToLaunch: 1
   childTime: 0
   releaseVolume: {fileID: 1083529524156608}
 --- !u!212 &212162294174499182
