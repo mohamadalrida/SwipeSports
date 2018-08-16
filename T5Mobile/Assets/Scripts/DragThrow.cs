@@ -59,6 +59,8 @@ public class DragThrow : MonoBehaviour
 
         waitText.enabled = false;
 
+        throwAllowed = true;
+
         if (soccerLevel == true)
         {
             golfStuff.SetActive(false);
@@ -80,7 +82,7 @@ public class DragThrow : MonoBehaviour
             startPos = Input.mousePosition;
         }
 
-        if (Input.GetMouseButtonUp(0) && throwAllowed)
+        if (Input.GetMouseButtonUp(0) && throwAllowed == true)
         {
             rb.gravityScale = 1.0f; // reset gravity
 
@@ -101,7 +103,7 @@ public class DragThrow : MonoBehaviour
                 audioSource.Play();
             }
 
-            if ( soccerLevel == true)
+            if (soccerLevel == true)
             {
                 audioSource.PlayOneShot(soccerHit);
             }
@@ -141,7 +143,7 @@ public class DragThrow : MonoBehaviour
             audioSource.PlayOneShot(bouncy);
         }
 
-        if( collision.gameObject.tag == "BallReset")
+        if(collision.gameObject.tag == "BallReset")
         {
             Debug.Log("hit Reset Zone");
 
